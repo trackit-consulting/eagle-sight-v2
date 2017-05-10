@@ -1,0 +1,150 @@
+[2017-04-26 09:56:56.391] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:56:56.395] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:56:57.412] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:57:07.414] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:57:07.414] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:57:08.419] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:57:18.420] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:57:18.420] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:57:19.423] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:57:29.424] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:57:29.424] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:57:30.431] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:57:40.431] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:57:40.431] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:57:41.434] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:57:51.434] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:57:51.434] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:57:52.437] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:58:02.438] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:58:02.438] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:58:03.439] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:58:13.440] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:58:13.441] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:58:14.443] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:58:24.444] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:58:24.444] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:58:25.446] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:58:35.447] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:58:35.447] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:58:36.452] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:58:46.452] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:58:46.452] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:58:47.454] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:58:57.455] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:58:57.455] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:58:58.457] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:59:08.458] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:59:08.458] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:59:09.461] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:59:19.462] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:59:19.462] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:59:20.464] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:59:30.464] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:59:30.464] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:59:31.466] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:59:41.467] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:59:41.467] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:59:42.469] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 09:59:52.470] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 09:59:52.470] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 09:59:53.473] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:00:03.474] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:00:03.474] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:00:04.474] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:00:14.476] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:00:14.476] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:00:15.478] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:00:25.478] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:00:25.478] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:00:26.482] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:00:36.483] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:00:36.484] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:00:37.488] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:00:47.489] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:00:47.490] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:00:48.492] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:00:58.494] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:00:58.494] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:00:59.496] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:01:09.497] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:01:09.497] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:01:10.499] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:01:20.500] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:01:20.500] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:01:21.500] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:01:31.501] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:01:31.501] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:01:32.502] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:01:42.503] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:01:42.503] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:01:43.504] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:01:53.505] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:01:53.505] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:01:54.507] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:02:04.506] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:02:04.506] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:02:05.507] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:02:15.508] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:02:15.508] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:02:16.510] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:02:26.511] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:02:26.511] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:02:27.517] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:02:37.517] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:02:37.517] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:02:38.518] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:02:48.519] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:02:48.519] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:02:49.521] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:02:59.525] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:02:59.525] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:03:00.526] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:03:10.527] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:03:10.527] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:03:11.528] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:03:21.529] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:03:21.529] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:03:22.530] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:03:32.531] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:03:32.531] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:03:33.533] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:03:43.534] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:03:43.534] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:03:44.536] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:03:54.537] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:03:54.537] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:03:55.538] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:04:05.539] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:04:05.539] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:04:06.540] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:04:16.541] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:04:16.541] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:04:17.544] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:04:27.544] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:04:27.544] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:04:28.545] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:04:38.547] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:04:38.547] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:04:39.547] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:04:49.548] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:04:49.548] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:04:50.657] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:05:00.674] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:05:00.674] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:05:01.676] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:05:11.676] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:05:11.676] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:05:12.679] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:05:22.680] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:05:22.680] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:05:23.682] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:05:33.682] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:05:33.682] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:05:34.683] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:05:44.684] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:05:44.684] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:05:45.685] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080
+[2017-04-26 10:05:55.686] [INFO] test - WebSocket Server uri   : ws://127.0.0.1:8080/
+[2017-04-26 10:05:55.686] [INFO] test - WebSocket Server domain: ws://services.local
+[2017-04-26 10:05:56.687] [ERROR] test - WebSocket Error: connect ECONNREFUSED 127.0.0.1:8080

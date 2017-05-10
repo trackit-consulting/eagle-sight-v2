@@ -1,0 +1,192 @@
+[2017-05-10 09:45:18.097] [INFO] server - Server is listening on port 8080
+[2017-05-10 09:51:43.892] [INFO] server - Connection Accepted.
+[2017-05-10 09:51:43.896] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 09:51:43.898] [INFO] server - Total Clients: 1
+[2017-05-10 09:51:53.979] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-10 09:51:56.987] [INFO] server - Connection Accepted.
+[2017-05-10 09:51:56.992] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 09:51:56.992] [INFO] server - Total Clients: 1
+[2017-05-10 09:52:35.530] [INFO] server - Connection Accepted.
+[2017-05-10 09:52:35.556] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":97542,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 09:52:35.556] [INFO] server - Total Clients: 2
+[2017-05-10 09:54:41.030] [INFO] server - Connection Closed Peer ::ffff:192.168.1.124
+[2017-05-10 09:54:55.590] [INFO] server - Connection Accepted.
+[2017-05-10 09:54:55.612] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 09:54:55.612] [INFO] server - Total Clients: 2
+[2017-05-10 09:55:13.937] [INFO] server - Connection Closed Peer ::ffff:192.168.1.124
+[2017-05-10 09:55:27.798] [INFO] server - Connection Accepted.
+[2017-05-10 09:55:27.832] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 09:55:27.833] [INFO] server - Total Clients: 2
+[2017-05-10 10:03:26.120] [INFO] server - Connection Accepted.
+[2017-05-10 10:03:26.493] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 10:03:26.493] [INFO] server - Total Clients: 3
+[2017-05-10 10:05:40.701] [INFO] server - Connection Closed Peer ::ffff:192.168.1.119
+[2017-05-10 10:06:08.196] [INFO] server - Connection Accepted.
+[2017-05-10 10:06:08.396] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 10:06:08.396] [INFO] server - Total Clients: 3
+[2017-05-10 10:09:12.957] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-10 10:09:15.838] [INFO] server - Connection Accepted.
+[2017-05-10 10:09:15.849] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 10:09:15.850] [INFO] server - Total Clients: 3
+[2017-05-10 10:09:21.936] [INFO] server - Connection Accepted.
+[2017-05-10 10:09:22.222] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 10:09:22.222] [INFO] server - Total Clients: 4
+[2017-05-10 10:11:29.235] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-10 10:11:32.153] [INFO] server - Connection Accepted.
+[2017-05-10 10:11:32.162] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 10:11:32.162] [INFO] server - Total Clients: 4
+[2017-05-10 10:12:16.748] [INFO] server - Connection Closed Peer ::ffff:192.168.1.119
+[2017-05-10 10:12:41.260] [INFO] server - Connection Accepted.
+[2017-05-10 10:12:41.610] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 10:12:41.610] [INFO] server - Total Clients: 4
+[2017-05-10 10:14:04.118] [INFO] server - Connection Closed Peer ::ffff:192.168.1.119
+[2017-05-10 10:15:11.276] [INFO] server - Connection Accepted.
+[2017-05-10 10:15:12.390] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 10:15:12.390] [INFO] server - Total Clients: 4
+[2017-05-10 10:15:57.779] [INFO] server - Connection Closed Peer ::ffff:192.168.1.119
+[2017-05-10 10:16:19.420] [INFO] server - Connection Accepted.
+[2017-05-10 10:16:19.680] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 10:16:19.680] [INFO] server - Total Clients: 4
+[2017-05-10 10:16:20.234] [INFO] server - Connection Closed Peer ::ffff:192.168.1.119
+[2017-05-10 10:22:00.470] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-10 10:22:03.193] [INFO] server - Connection Accepted.
+[2017-05-10 10:22:03.201] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 10:22:03.202] [INFO] server - Total Clients: 3
+[2017-05-10 10:22:19.515] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-10 10:22:22.556] [INFO] server - Connection Accepted.
+[2017-05-10 10:22:22.571] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 10:22:22.572] [INFO] server - Total Clients: 3
+[2017-05-10 10:22:34.943] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-10 10:22:38.089] [INFO] server - Connection Accepted.
+[2017-05-10 10:22:38.104] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 10:22:38.104] [INFO] server - Total Clients: 3
+[2017-05-10 10:22:54.402] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-10 10:29:28.264] [INFO] server - Connection Closed Peer ::ffff:192.168.1.119
+[2017-05-10 10:43:11.969] [INFO] server - Connection Accepted.
+[2017-05-10 10:43:11.979] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":143619,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 10:43:11.979] [INFO] server - Total Clients: 2
+[2017-05-10 10:46:39.419] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-10 10:46:41.988] [INFO] server - Connection Accepted.
+[2017-05-10 10:46:41.990] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":108001,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 10:46:41.990] [INFO] server - Total Clients: 2
+[2017-05-10 10:49:42.811] [INFO] server - Connection Accepted.
+[2017-05-10 10:49:42.858] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":108001,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 10:49:42.858] [INFO] server - Total Clients: 3
+[2017-05-10 10:55:16.342] [INFO] server - Connection Accepted.
+[2017-05-10 10:55:16.349] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":97542,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 10:55:16.349] [INFO] server - Total Clients: 4
+[2017-05-10 10:55:17.879] [INFO] server - Connection Closed Peer ::ffff:192.168.1.162
+[2017-05-10 10:55:25.618] [INFO] server - Connection Accepted.
+[2017-05-10 10:55:25.622] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":108001,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 10:55:25.622] [INFO] server - Total Clients: 4
+[2017-05-10 11:00:23.104] [INFO] server - Connection Accepted.
+[2017-05-10 11:00:23.407] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 11:00:23.408] [INFO] server - Total Clients: 5
+[2017-05-10 11:10:16.030] [INFO] server - Connection Closed Peer ::ffff:192.168.1.162
+[2017-05-10 11:10:25.949] [INFO] server - Connection Accepted.
+[2017-05-10 11:10:25.955] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":97544,"epoch":1494420634000,"type":"auth","lp":"41-OI-36"}
+[2017-05-10 11:10:25.955] [INFO] server - Total Clients: 5
+[2017-05-10 11:13:05.951] [INFO] server - Connection Closed Peer ::ffff:192.168.1.162
+[2017-05-10 11:13:14.460] [INFO] server - Connection Accepted.
+[2017-05-10 11:13:14.473] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":97554,"epoch":1494420634000,"type":"auth","lp":"41-OI-36"}
+[2017-05-10 11:13:14.473] [INFO] server - Total Clients: 5
+[2017-05-10 11:15:20.846] [INFO] server - Server is listening on port 8080
+[2017-05-10 11:15:22.208] [INFO] server - Connection Accepted.
+[2017-05-10 11:15:22.212] [INFO] server - Connection Accepted.
+[2017-05-10 11:15:22.225] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":97554,"epoch":1494420634000,"type":"auth","lp":"41-OI-36"}
+[2017-05-10 11:15:22.226] [INFO] server - Total Clients: 1
+[2017-05-10 11:15:22.233] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":108001,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 11:15:22.234] [INFO] server - Total Clients: 2
+[2017-05-10 11:15:23.831] [INFO] server - Connection Accepted.
+[2017-05-10 11:15:23.835] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":108001,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 11:15:23.836] [INFO] server - Total Clients: 3
+[2017-05-10 11:15:23.925] [INFO] server - Connection Accepted.
+[2017-05-10 11:15:23.957] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 11:15:23.957] [INFO] server - Total Clients: 4
+[2017-05-10 11:26:06.661] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-10 11:26:09.398] [INFO] server - Connection Accepted.
+[2017-05-10 11:26:09.404] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":108001,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 11:26:09.404] [INFO] server - Total Clients: 4
+[2017-05-10 11:26:26.418] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-10 11:26:29.515] [INFO] server - Connection Accepted.
+[2017-05-10 11:26:29.525] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":108001,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 11:26:29.526] [INFO] server - Total Clients: 4
+[2017-05-10 11:26:37.672] [INFO] server - Connection Closed Peer ::ffff:192.168.1.124
+[2017-05-10 11:26:42.987] [INFO] server - Connection Closed Peer ::ffff:192.168.1.124
+[2017-05-10 11:26:59.901] [INFO] server - Connection Accepted.
+[2017-05-10 11:26:59.988] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 11:26:59.988] [INFO] server - Total Clients: 3
+[2017-05-10 11:27:04.946] [INFO] server - Connection Closed Peer ::ffff:192.168.1.124
+[2017-05-10 11:27:06.507] [INFO] server - Connection Accepted.
+[2017-05-10 11:27:06.785] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":108001,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 11:27:06.785] [INFO] server - Total Clients: 3
+[2017-05-10 11:27:10.189] [INFO] server - Connection Closed Peer ::ffff:192.168.1.124
+[2017-05-10 11:27:27.835] [INFO] server - Connection Accepted.
+[2017-05-10 11:27:28.350] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 11:27:28.350] [INFO] server - Total Clients: 3
+[2017-05-10 11:27:33.347] [INFO] server - Connection Closed Peer ::ffff:192.168.1.124
+[2017-05-10 11:27:35.260] [INFO] server - Connection Accepted.
+[2017-05-10 11:27:35.616] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":108001,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 11:27:35.616] [INFO] server - Total Clients: 3
+[2017-05-10 11:27:56.599] [INFO] server - Connection Accepted.
+[2017-05-10 11:27:56.659] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 11:27:56.659] [INFO] server - Total Clients: 4
+[2017-05-10 11:28:00.689] [INFO] server - Connection Accepted.
+[2017-05-10 11:28:00.786] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 11:28:00.787] [INFO] server - Total Clients: 5
+[2017-05-10 11:28:03.503] [INFO] server - Connection Closed Peer ::ffff:192.168.1.119
+[2017-05-10 11:29:02.114] [INFO] server - Connection Closed Peer ::ffff:192.168.1.124
+[2017-05-10 11:29:18.482] [INFO] server - Connection Accepted.
+[2017-05-10 11:29:18.540] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":108001,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 11:29:18.541] [INFO] server - Total Clients: 4
+[2017-05-10 11:49:08.637] [INFO] server - Connection Accepted.
+[2017-05-10 11:49:08.696] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":97542,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 11:49:08.696] [INFO] server - Total Clients: 5
+[2017-05-10 11:51:21.266] [INFO] server - Connection Accepted.
+[2017-05-10 11:51:23.017] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":97542,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 11:51:23.017] [INFO] server - Total Clients: 6
+[2017-05-10 11:51:37.783] [INFO] server - Connection Closed Peer ::ffff:192.168.1.124
+[2017-05-10 11:52:18.797] [INFO] server - Connection Accepted.
+[2017-05-10 11:52:18.806] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":108001,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 11:52:18.806] [INFO] server - Total Clients: 6
+[2017-05-10 12:00:28.419] [INFO] server - Connection Closed Peer ::ffff:192.168.1.134
+[2017-05-10 12:01:43.370] [INFO] server - Connection Accepted.
+[2017-05-10 12:01:43.379] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":97542,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 12:01:43.379] [INFO] server - Total Clients: 6
+[2017-05-10 12:02:02.752] [INFO] server - Server is listening on port 8080
+[2017-05-10 12:02:10.424] [INFO] server - Connection Accepted.
+[2017-05-10 12:02:10.436] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":97542,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 12:02:10.436] [INFO] server - Total Clients: 1
+[2017-05-10 12:02:10.760] [INFO] server - Connection Accepted.
+[2017-05-10 12:02:10.773] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":108001,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 12:02:10.773] [INFO] server - Total Clients: 2
+[2017-05-10 12:02:11.374] [INFO] server - Connection Accepted.
+[2017-05-10 12:02:11.431] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":97542,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 12:02:11.431] [INFO] server - Total Clients: 3
+[2017-05-10 12:02:11.831] [INFO] server - Connection Accepted.
+[2017-05-10 12:02:11.838] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":108001,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 12:02:11.838] [INFO] server - Total Clients: 4
+[2017-05-10 12:02:11.947] [INFO] server - Connection Accepted.
+[2017-05-10 12:02:11.958] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 12:02:11.958] [INFO] server - Total Clients: 5
+[2017-05-10 12:02:12.120] [INFO] server - Connection Accepted.
+[2017-05-10 12:02:12.126] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":97554,"epoch":1494420634000,"type":"auth","lp":"41-OI-36"}
+[2017-05-10 12:02:12.126] [INFO] server - Total Clients: 6
+[2017-05-10 12:35:26.774] [INFO] server - Connection Accepted.
+[2017-05-10 12:35:26.801] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":97542,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 12:35:26.801] [INFO] server - Total Clients: 7
+[2017-05-10 12:35:32.600] [INFO] server - Connection Closed Peer ::ffff:192.168.1.134
+[2017-05-10 12:35:33.202] [INFO] server - Connection Closed Peer ::ffff:192.168.1.127
+[2017-05-10 12:35:33.204] [INFO] server - Connection Closed Peer ::ffff:192.168.1.124
+[2017-05-10 12:35:33.204] [INFO] server - Connection Closed Peer ::ffff:192.168.1.162
+[2017-05-10 12:35:33.204] [INFO] server - Connection Closed Peer ::ffff:192.168.1.124
+[2017-05-10 12:38:18.196] [INFO] server - Connection Accepted.
+[2017-05-10 12:38:18.206] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1494667184000,"type":"auth","lp":"41-OI-41"}
+[2017-05-10 12:38:18.206] [INFO] server - Total Clients: 3
+[2017-05-10 12:38:31.796] [INFO] server - Connection Closed Peer ::ffff:192.168.1.124
+[2017-05-10 12:39:01.930] [INFO] server - Connection Accepted.
+[2017-05-10 12:39:01.937] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":108001,"epoch":1494420634000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-10 12:39:01.937] [INFO] server - Total Clients: 3
+[2017-05-10 12:40:08.403] [INFO] server - Connection Closed Peer ::ffff:192.168.1.124
+[2017-05-10 12:50:02.174] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-10 14:22:02.354] [INFO] server - Connection Closed Peer ::ffff:192.168.1.127
