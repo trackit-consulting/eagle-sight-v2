@@ -1,0 +1,25 @@
+[2017-04-21 09:34:41.512] [INFO] server - Server is listening on port 8080
+[2017-04-21 09:35:08.970] [INFO] server - Connection Accepted.
+[2017-04-21 09:35:09.148] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1513077534000,"type":1}
+[2017-04-21 09:35:09.149] [INFO] server - Total Clients: 1
+[2017-04-21 09:53:23.685] [INFO] server - Connection Closed Peer ::ffff:127.0.0.1
+[2017-04-21 09:53:32.874] [INFO] server - Connection Accepted.
+[2017-04-21 09:53:33.691] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1513077534000,"type":1}
+[2017-04-21 09:53:33.692] [INFO] server - Total Clients: 1
+[2017-04-21 09:53:40.013] [INFO] server - Connection Closed Peer ::ffff:127.0.0.1
+[2017-04-21 09:53:45.141] [INFO] server - Connection Accepted.
+[2017-04-21 09:53:45.233] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1513077534000,"type":1}
+[2017-04-21 09:53:45.233] [INFO] server - Total Clients: 1
+[2017-04-21 10:05:13.317] [INFO] server - Connection Closed Peer ::ffff:127.0.0.1
+[2017-04-21 10:05:31.230] [INFO] server - Connection Accepted.
+[2017-04-21 10:05:31.401] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1513077534000,"type":1}
+[2017-04-21 10:05:31.401] [INFO] server - Total Clients: 1
+[2017-04-21 10:16:55.494] [INFO] server - Connection Closed Peer ::ffff:127.0.0.1
+[2017-04-21 10:16:59.431] [INFO] server - Connection Accepted.
+[2017-04-21 10:16:59.564] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1513077534000,"type":1}
+[2017-04-21 10:16:59.564] [INFO] server - Total Clients: 1
+[2017-04-21 10:17:40.090] [INFO] server - Connection Closed Peer ::ffff:127.0.0.1
+[2017-04-21 10:17:45.113] [INFO] server - Connection Accepted.
+[2017-04-21 10:17:45.243] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1513077534000,"type":1}
+[2017-04-21 10:17:45.243] [INFO] server - Total Clients: 1
+[2017-04-21 10:18:14.860] [INFO] server - Connection Closed Peer ::ffff:127.0.0.1
