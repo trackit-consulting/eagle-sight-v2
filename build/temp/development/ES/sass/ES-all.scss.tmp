@@ -1,5 +1,5 @@
 $app-name:  dynamic( 'ES' );
-$image-search-path: 'C:/Users/Public/Documents/eagle-sight-v2/eagle-sight-v2/build/development/ES/resources';
+$image-search-path: 'C:/Users/manuel/Documents/GitHub/eagle-sight-v2/build/development/ES/resources';
 $theme-name:  dynamic( 'theme-triton' );
 $include-es-application: dynamic(true);;
 $include-es-store-routedata: dynamic(true);;
