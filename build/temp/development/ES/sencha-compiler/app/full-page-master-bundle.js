@@ -1,2 +1,2 @@
 // @tag full-page
-// @require C:\Users\Public\Documents\eagle-sight-v2\eagle-sight-v2\app.js
+// @require C:\Users\manuel\Documents\GitHub\eagle-sight-v2\app.js
