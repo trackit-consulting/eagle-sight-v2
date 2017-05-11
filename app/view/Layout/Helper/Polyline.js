@@ -1,4 +1,4 @@
-Ext.define('ES.util.Helper.Polyline', {
+sExt.define('ES.util.Helper.Polyline', {
     statics: {
         /**
         * Draw Polyline
