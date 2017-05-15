@@ -4,7 +4,7 @@ locale = {
 		time: "Horas",
 		address: "Morada",
 		dir:"Direções",
-		at:"Tempo Previsto para Chegar",
+		at:"ETA",
 		vel:"Velocidade (km/h)",
         dkm:"Distância (km)",
 		countdown:"TTL",
