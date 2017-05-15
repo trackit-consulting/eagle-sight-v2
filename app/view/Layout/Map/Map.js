@@ -76,5 +76,6 @@ Ext.define('ES.view.Layout.Map.Map', {
         google.maps.event.addListener(infowindow, 'closeclick', function () {
             marker.setMap(null);
         });
+        marker.setVisible(false);
     }
 });

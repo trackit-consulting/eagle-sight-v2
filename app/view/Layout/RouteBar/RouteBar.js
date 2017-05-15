@@ -37,6 +37,7 @@ Ext.define('ES.view.Layout.RouteBar.RouteBar', {
                 click: 'cellclick'
             }
         },
+        /*
         {
             text: locale.countdown,
             dataIndex: 'countdown',
@@ -57,6 +58,7 @@ Ext.define('ES.view.Layout.RouteBar.RouteBar', {
                 click: 'cellclick'
             }
         },
+        */
         {
             text: locale.dkm,
             dataIndex: 'dkm',
@@ -105,7 +107,8 @@ Ext.define('ES.view.Layout.RouteBar.RouteBar', {
             listeners: {
                 click: 'cellclick'
             }
-        },
+        }
+        /*,
         {
             text: locale.lp,
             dataIndex: 'lp',
@@ -126,6 +129,7 @@ Ext.define('ES.view.Layout.RouteBar.RouteBar', {
                 click: 'cellclick'
             }
         }
+        */
         ]
     }
 });

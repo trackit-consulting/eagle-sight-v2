@@ -27,7 +27,7 @@ Ext.define('ES.view.Layout.Layout', {
         id: 'tb',
         height: 80,
         style: {
-            background: '#136c5a',
+            background: ES.util.Helper.Colors.toolbarBg,
             'text-align': 'center',
             'vertical-align': 'middle'
         },

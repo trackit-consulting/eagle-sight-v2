@@ -8,10 +8,12 @@ Ext.define('ES.util.Helper.GlobalVars', {
         vel: 0, //Current speed
         lp: 0, //License plate
         isOffline: false, //Check if page expired or offline
-        ws: "ws://192.168.1.118:8080/", //Websocket address
+        ws: "ws://192.168.1.111:8080/", //Websocket address
         protocol: "echo-protocol", //websocket protocol
         countPing: 0, //Ping pong
         countTime: 0, //Count how many seconds the car have been parked
         flightPathCoordinates: [], //All route coordinates
+        markers: [],
+        currentDirection: "" //Vehicles direction
     }
 });

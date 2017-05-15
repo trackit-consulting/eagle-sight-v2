@@ -39,6 +39,7 @@ Ext.define('ES.util.Helper.Timeline', {
                 vel: ES.util.Helper.GlobalVars.vel,
                 hidden: false
             };
+            ES.util.Helper.GlobalVars.currentDirection = ES.util.Helper.Timeline.degToCompass(hdg);
             timelineStore.add(specifyInfo);
             timelineStore.save();
         },
@@ -70,10 +71,9 @@ Ext.define('ES.util.Helper.Timeline', {
          * Show info window on map
          * @param {float} lat Latitude from the address to show
          * @param {lng} lng Longitude from the address to show
-         * @param {object[]} routeStore Route bar store
          * @param {object} newInformation Google Maps Widget
          */
-        showAddress: function (lat, lng, vel, routeStore, newInformation) {
+        showAddress: function (lat, lng, newInformation) {
             var geocoder = new google.maps.Geocoder();
             var latlng = new google.maps.LatLng(lat, lng);
             geocoder.geocode({
@@ -82,7 +82,6 @@ Ext.define('ES.util.Helper.Timeline', {
                 if (status == google.maps.GeocoderStatus.OK) {
                     if (results[0]) {
                         newInformation.addInfoWindow(results[0].formatted_address, lat, lng);
-                        //ES.util.Helper.Routebar.showVel(routeStore, vel);
                     } else {
                         ES.util.Helper.Alerts.wsNoResults();
                     }

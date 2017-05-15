@@ -1,5 +1,5 @@
 //http://localhost:1841/?token=eyJsbmciOiAtOC42NTY4NzI2LCJsYXQiOiA0MS4xNjI4NjM0LCJ2aWQiOiAxMzE2NTMsImVwb2NoIjogMTUxMzA3NzUzNDAwMCwgInR5cGUiOiAxfQ==
-//{"lng": -8.6568726,"lat": 41.1628634,"vid": 131653,"epoch": 1513077534000, "type": "auth", "lp": "XX-XX-XX"};
+//{"lng": -8.6568726,"lat": 41.1628634,"vid": 131653,"epoch": 1494501273000, "type": "auth", "lp": "XX-XX-XX", "userlang": "en"}
 Ext.define('ES.view.Layout.Map.MapController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.map',
@@ -55,7 +55,8 @@ Ext.define('ES.view.Layout.Map.MapController', {
                                         client = new WebSocket(ES.util.Helper.GlobalVars.ws, ES.util.Helper.GlobalVars.protocol);
                                         client.onopen = function () {
                                             //ES.util.Helper.Alerts.wsOpenedAlert();
-                                            Ext.getCmp("con").setSrc("resources/connected/green-ball.png");
+                                            //Ext.getCmp("con").setSrc("resources/connected/green-ball.png");
+                                            ES.util.Helper.GlobalVars.countPing = 1;
                                             //Sends the token data to the server
                                             ES.util.Helper.Initialize.sendData(client, ES.util.Helper.Token.decryptToken());
 
@@ -93,7 +94,7 @@ Ext.define('ES.view.Layout.Map.MapController', {
                                                     } else {
                                                         ES.util.Helper.Timeline.cleanTimeline(Ext.getStore('timeline'));
                                                         //Save the received data
-                                                        ES.util.Helper.Savedata.saveReceivedData(parseFloat(JSON.parse(e.data).params.lastRecord.loc.lat), parseFloat(JSON.parse(e.data).params.lastRecord.loc.lon), parseFloat(localStorage.getItem('dstLat')), parseFloat(localStorage.getItem('dstLng')), parseFloat(JSON.parse(e.data).params.lastRecord.gsp));
+                                                        ES.util.Helper.Savedata.saveReceivedData(parseFloat(JSON.parse(e.data).params.lastRecord.loc.lat), parseFloat(JSON.parse(e.data).params.lastRecord.loc.lon), parseFloat(localStorage.getItem('dstLat')), parseFloat(localStorage.getItem('dstLng')),parseFloat(JSON.parse(e.data).params.lastRecord.gsp));
                                                         //Save the coordinates to draw on the map
                                                         ES.util.Helper.Savedata.saveCoordinates(parseFloat(JSON.parse(e.data).params.lastRecord.loc.lat), parseFloat(JSON.parse(e.data).params.lastRecord.loc.lon));
                                                         //Update the route bar with the last received data

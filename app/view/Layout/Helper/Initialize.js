@@ -18,8 +18,14 @@ Ext.define('ES.util.Helper.Initialize', {
         */
         addDestinationMarker: function (lat, lng, gmappanel) {
             setTimeout(function () {
+            var markerImage = new google.maps.MarkerImage('resources/pointers/pointer_idle_shrink.gif',
+                new google.maps.Size(35, 35),
+                new google.maps.Point(0, 0),
+                new google.maps.Point(15, 15));
+
                 var pos = new google.maps.LatLng(lat, lng);
                 var marker = new google.maps.Marker({
+                    icon: markerImage,
                     position: pos,
                     title: 'Destination',
                     map: gmappanel
