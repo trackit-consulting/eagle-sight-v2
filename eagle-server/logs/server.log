@@ -50,3 +50,23 @@
 [2017-05-15 11:13:44.048] [INFO] server - Connection Accepted.
 [2017-05-15 11:13:44.058] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1495442278000,"type":"auth","lp":"XX-XX-XX","userlang":"en"}
 [2017-05-15 11:13:44.058] [INFO] server - Total Clients: 1
+[2017-05-15 11:24:51.467] [INFO] server - Connection Closed Peer ::ffff:192.168.1.111
+[2017-05-15 11:24:54.215] [INFO] server - Connection Accepted.
+[2017-05-15 11:24:54.221] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1495442278000,"type":"auth","lp":"XX-XX-XX","userlang":"en"}
+[2017-05-15 11:24:54.222] [INFO] server - Total Clients: 1
+[2017-05-15 11:25:21.134] [INFO] server - Connection Closed Peer ::ffff:192.168.1.111
+[2017-05-15 11:25:23.807] [INFO] server - Connection Accepted.
+[2017-05-15 11:25:23.813] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1495442278000,"type":"auth","lp":"XX-XX-XX","userlang":"en"}
+[2017-05-15 11:25:23.813] [INFO] server - Total Clients: 1
+[2017-05-15 11:27:50.833] [INFO] server - Connection Closed Peer ::ffff:192.168.1.111
+[2017-05-15 11:27:53.506] [INFO] server - Connection Accepted.
+[2017-05-15 11:27:53.507] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1495442278000,"type":"auth","lp":"XX-XX-XX","userlang":"en"}
+[2017-05-15 11:27:53.507] [INFO] server - Total Clients: 1
+[2017-05-15 11:44:18.799] [INFO] server - Connection Closed Peer ::ffff:192.168.1.111
+[2017-05-15 11:44:21.441] [INFO] server - Connection Accepted.
+[2017-05-15 11:44:21.448] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1495442278000,"type":"auth","lp":"XX-XX-XX","userlang":"en"}
+[2017-05-15 11:44:21.448] [INFO] server - Total Clients: 1
+[2017-05-15 11:56:46.484] [INFO] server - Connection Closed Peer ::ffff:192.168.1.111
+[2017-05-15 11:56:49.183] [INFO] server - Connection Accepted.
+[2017-05-15 11:56:49.189] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1495442278000,"type":"auth","lp":"XX-XX-XX","userlang":"en"}
+[2017-05-15 11:56:49.189] [INFO] server - Total Clients: 1
