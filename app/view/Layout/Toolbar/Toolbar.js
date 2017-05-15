@@ -5,6 +5,7 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
         'Ext.layout.container.Fit',
         'ES.view.Layout.Locale.Translation',
         'ES.util.Helper.GlobalVars',
+        'ES.view.Layout.Locale.TranslationController',
     ],
     controller: 'toolbar',
     viewModel: 'toolbar',
@@ -31,11 +32,77 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
     },
         {
             xtype: 'tbspacer',
-            width: 2
+            width: 20
         },
         {
-            xtype: 'translationbtn'
+            xtype: 'image',
+            id: 'en',
+            alt: 'englandflag',
+            width: 25,
+            height: 15,
+            src: 'resources/nv_flags/United-Kingdom.png',
+            listeners: {
+                el: {
+                    click: "onImageClick"
+                }
+            }
         },
+        {
+            xtype: 'tbspacer',
+            width: 5
+        },
+        {
+            xtype: 'image',
+            id: 'pt_PT',
+            alt: 'portugalflag',
+            width: 25,
+            height: 15,
+            src: 'resources/nv_flags/Portugal.png',
+            listeners: {
+                el: {
+                    click: "onImageClick"
+                }
+            }
+        },
+        {
+            xtype: 'tbspacer',
+            width: 5
+        },
+        {
+            xtype: 'image',
+            id: 'fr',
+            alt: 'franceflag',
+            width: 25,
+            height: 15,
+            src: 'resources/nv_flags/France.png',
+            listeners: {
+                el: {
+                    click: "onImageClick"
+                }
+            }
+
+        },
+        {
+            xtype: 'tbspacer',
+            width: 5
+        },
+        {
+            xtype: 'image',
+            id: 'es',
+            alt: 'spainflag',
+            width: 25,
+            height: 15,
+            src: 'resources/nv_flags/Spain.png',
+            listeners: {
+                el: {
+                    click: "onImageClick"
+                }
+            }
+
+        },
+       /* {
+            xtype: 'translationbtn'
+        },*/
         "->", {
             xtype: 'image',
             alt: 'connection',
@@ -85,26 +152,26 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
             }
 
         },
-        "<-", {
-            xtype: 'image',
-            alt: 'project_logo',
-            id: 'project_logo',
-            src: 'resources/images/project_logo.png',
-            width: 140,
-            height: 60,
-            style: {
-                "margin-right": "10px"
-            },
-            listeners: {
-                afterrender: function () {
-
-                    if (ES.util.Helper.Mobile.isMobile()) {
-                        Ext.getCmp("project_logo").setHeight(45);
-                        Ext.getCmp("project_logo").setWidth(90);
-                    }
-
-                }
-            }
-        }
+        /* "<-", {
+             xtype: 'image',
+             alt: 'project_logo',
+             id: 'project_logo',
+             src: 'resources/images/project_logo.png',
+             width: 140,
+             height: 60,
+             style: {
+                 "margin-right": "10px"
+             },
+             listeners: {
+                 afterrender: function () {
+ 
+                     if (ES.util.Helper.Mobile.isMobile()) {
+                         Ext.getCmp("project_logo").setHeight(45);
+                         Ext.getCmp("project_logo").setWidth(90);
+                     }
+ 
+                 }
+             }
+         }*/
     ]
 });

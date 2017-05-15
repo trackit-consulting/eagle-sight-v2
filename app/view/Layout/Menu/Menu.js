@@ -7,7 +7,6 @@ Ext.define('ES.view.Layout.Menu.Menu', {
     overflowY: 'auto',
     id: 'timelineBar',
     autoScroll: true,
-    title: 'Timeline',
     bodyStyle: 'background: ' + ES.util.Helper.Colors.timelineBg + ';',
     autoHeight: true,
     store: {

@@ -3,7 +3,7 @@ locale = {
 		time: "Time",
 		address: "Address",
 		dir:"Direction",
-		at: "Arrival Time",
+		at: "ETA",
 		vel:"Speed (km/h)",
         dkm:"Distance (km)",
 		timeline:"TimeLine",

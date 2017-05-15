@@ -50,12 +50,13 @@ Ext.define('ES.view.Layout.Layout', {
         title: locale.timeline,
         cls: 'x-toolbar-green',
         collapsible: true,
+        collapsed:true,
         width: 320,
         height: 500,
         style: {
             background: ES.util.Helper.Colors.toolbarBg
         },
-        listeners: {
+       /* listeners: {
             afterrender: {
                 fn: function () {
                     if (ES.util.Helper.Mobile.isMobile()) {
@@ -65,7 +66,7 @@ Ext.define('ES.view.Layout.Layout', {
                     }
                 }
             }
-        }
+        }*/
         /*,
         plugins: 'responsive',
         dockedItems: [{
