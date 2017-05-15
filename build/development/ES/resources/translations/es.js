@@ -4,7 +4,7 @@ locale = {
 		time: "Hora",
 		address: "Dirigirse",
 		dir:"Rumbo",
-		at: "Hora de llegada",
+		at: "ETA",
 		vel:"Velocidad (km/h)",
         dkm:"Distancia (km)",
 		timeline:"Cronograma",
