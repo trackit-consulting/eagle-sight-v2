@@ -30,7 +30,7 @@ Ext.define('ES.view.Layout.Toolbar.ToolbarController', {
         localStorage.setItem("user-lang", lang);
         location.reload();
     },
-    init: function () {
+   /* init: function () {
         var lang = localStorage ? (localStorage.getItem('user-lang') || 'en') : 'en',
             button = this.getView();
         button.setId(lang);
@@ -50,5 +50,5 @@ Ext.define('ES.view.Layout.Toolbar.ToolbarController', {
             default:
                 ES.util.Helper.Mobile.setText('English', button);
         }
-    }
+    }*/
 });
