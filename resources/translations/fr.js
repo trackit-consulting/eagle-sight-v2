@@ -4,7 +4,7 @@ locale = {
 		time:"Temps",
 		address:"Adresse",
 		dir:"Orientation",
-		at: "Heure d'arrivée",
+		at: "ETA",
 		vel:"Vitesse (km/h)",
         dkm:"Distance (km)",
 		timeline:"Chronologie",
