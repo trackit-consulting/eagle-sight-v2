@@ -16,6 +16,7 @@ Ext.define('ES.util.Helper.Validations', {
         validateJSON: function (dec) {
             try {
                 var retreiveObj = JSON.parse(dec);
+                localStorage.setItem("user-lang", retreiveObj.userlang);
                 return true;
             } catch (e) {
                 return false;

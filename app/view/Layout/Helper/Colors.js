@@ -6,6 +6,6 @@ Ext.define('ES.util.Helper.Colors', {
         routeBarHeader: "#0b4439",
         routeBarRows: "#1b6053",
         rowsTxtColor: "#ffffff",
-        toolbarBg: "linear-gradient(to left, #385871 , ##6cd87e);"
+        toolbarBg: "#f9e9cf"
     }
 });
