@@ -87,7 +87,7 @@ Ext.define('ES.util.Helper.Polyline', {
             google.maps.event.addDomListener(marker, 'mouseover', function() {
               test = new google.maps.Marker({
                 icon: licensePlate,
-                label: {text: localStorage.getItem("vhcLp"), color: "#595959", fontSize: "12px"},
+                label: {text: localStorage.getItem("vhcLp"), color: "black", fontSize: "10px"},
                 position: flightPath.getPath().getAt(flightPath.getPath().getLength() - 1),
                 map: map,
                 optimized: false
