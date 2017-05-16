@@ -25,7 +25,7 @@ Ext.define('ES.view.Layout.Layout', {
         region: 'north',
         plugins: 'responsive',
         id: 'tb',
-        height: 80,
+        height: 55,
         style: {
             background: ES.util.Helper.Colors.toolbarBg,
             'text-align': 'center',

@@ -16,46 +16,7 @@ Ext.define('ES.view.Layout.Map.Map', {
         zoomControlOptions: {
             position: google.maps.ControlPosition.RIGHT_CENTER
         },
-        styles: [{
-            "featureType": "all",
-            "elementType": "all",
-            "stylers": [{
-                "hue": "#00ffbc"
-            }]
-        },
-        {
-            "featureType": "poi",
-            "elementType": "all",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        },
-        {
-            "featureType": "road",
-            "elementType": "all",
-            "stylers": [{
-                "saturation": -70
-            }]
-        },
-        {
-            "featureType": "transit",
-            "elementType": "all",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        },
-        {
-            "featureType": "water",
-            "elementType": "all",
-            "stylers": [{
-                "visibility": "simplified"
-            },
-            {
-                "saturation": -60
-            }
-            ]
-        }
-        ]
+       
     },
     dockedItems: [{
         xtype: 'routebar',

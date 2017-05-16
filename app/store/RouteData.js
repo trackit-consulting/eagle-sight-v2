@@ -29,14 +29,6 @@ Ext.define('ES.store.RouteData', {
             countdown: '',
             lp: ''
         },
-            /*
-            {
-              at: '',
-              dkm: '',
-              vel: '',
-              countdown: ''
-            }
-            */
         ]
     },
     proxy: {

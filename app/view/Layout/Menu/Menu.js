@@ -8,10 +8,14 @@ Ext.define('ES.view.Layout.Menu.Menu', {
     id: 'timelineBar',
     autoScroll: true,
     title: 'Timeline',
-    bodyStyle: 'background: ' + ES.util.Helper.Colors.timelineBg + ';',
     autoHeight: true,
     store: {
         type: 'timeline'
+    },
+    border: 1,
+    style: {
+       borderColor: 'black',
+       borderStyle: 'solid'
     },
     columns: {
         border: false,
@@ -23,13 +27,13 @@ Ext.define('ES.view.Layout.Menu.Menu', {
             flex: 1,
             dataIndex: 'time',
             align: 'center',
-            height: 60,
+            height: 50,
             style: {
-                "background-color": ES.util.Helper.Colors.timelineRow,
+                "background": "-webkit-linear-gradient(#f9e9cf, #e5c99c);",
                 "color": ES.util.Helper.Colors.rowsTxtColor
             },
             renderer: function (value, metaData) {
-                metaData.style = "background-color:#136051; color: white; outline: 1px solid white; padding:20px;";
+                metaData.style = "color:" +  ES.util.Helper.Colors.rowsTxtColor + "; outline: 1px solid white; padding:20px;";
                 return value;
             }
         },
@@ -39,14 +43,14 @@ Ext.define('ES.view.Layout.Menu.Menu', {
             id: 'addressBtn',
             flex: 1,
             align: 'center',
-            height: 60,
+            height: 50,
             style: {
-                "background-color": ES.util.Helper.Colors.timelineRowShow,
+                "background": "-webkit-linear-gradient(#f9e9cf, #e5c99c);",
                 "color": ES.util.Helper.Colors.rowsTxtColor,
-                "outline": "1px solid #2b5876"
+                "outline": "1px solid #d3a863"
             },
             renderer: function (value, metaData) {
-                metaData.style = "background-color:#0d342c; color: " + ES.util.Helper.Colors.rowsTxtColor + "; outline: 1px solid white; padding:20px";
+                metaData.style = "background-color:#d3d3d3; color: #000000; padding:20px";
                 return value;
             },
             listeners: {
@@ -58,64 +62,64 @@ Ext.define('ES.view.Layout.Menu.Menu', {
             dataIndex: 'dir',
             flex: 1,
             align: 'center',
-            height: 60,
+            height: 50,
             style: {
-                "background-color": ES.util.Helper.Colors.timelineRow,
+                "background": "-webkit-linear-gradient(#f9e9cf, #e5c99c);",
                 "color": ES.util.Helper.Colors.rowsTxtColor,
-                "outline": "1px solid #2b5876"
+                "outline": "1px solid #d3a863"
             },
             renderer: function (value, metaData, record) {
-                metaData.style = "background-color:#136051; color: " + ES.util.Helper.Colors.rowsTxtColor + "; outline: 1px solid white; padding: 20px;";
+                metaData.style = "color: " + ES.util.Helper.Colors.rowsTxtColor + "; padding: 20px;";
                 switch (value) {
                     case 'N':
-                        return '<img width="13" height="13" src="resources/directions/north.png" />';
+                        return '<img width="15" height="15" src="resources/directions/north_1.png" />';
                         break;
                     case 'S':
-                        return '<img width="13" height="13" src="resources/directions/south.png" />';
+                        return '<img width="15" height="15" src="resources/directions/south_1.png" />';
                         break;
                     case 'W':
-                        return '<img width="13" height="13" src="resources/directions/west.png" />';
+                        return '<img width="15" height="15" src="resources/directions/west_1.png" />';
                         break;
                     case 'E':
-                        return '<img width="13" height="13" src="resources/directions/east.png" />';
+                        return '<img width="15" height="15" src="resources/directions/east_1.png" />';
                         break;
                     case 'NE':
-                        return '<img width="13" height="13" src="resources/directions/northeast.png" />';
+                        return '<img width="15" height="15" src="resources/directions/northeast_1.png" />';
                         break;
                     case 'NW':
-                        return '<img width="13" height="13" src="resources/directions/northwest.png" />';
+                        return '<img width="15" height="15" src="resources/directions/northwest_1.png" />';
                         break;
                     case 'SW':
-                        return '<img width="13" height="13" src="resources/directions/southwest.png" />';
+                        return '<img width="15" height="15" src="resources/directions/southwest_1.png" />';
                         break;
                     case 'SE':
-                        return '<img width="13" height="13" src="resources/directions/southeast.png" />';
+                        return '<img width="15" height="15" src="resources/directions/southeast_1.png" />';
                         break;
                     case 'NNE':
-                        return '<img width="13" height="13" src="resources/directions/northeast.png" />';
+                        return '<img width="15" height="15" src="resources/directions/northeast_1.png" />';
                         break;
                     case 'ENE':
-                        return '<img width="13" height="13" src="resources/directions/northeast.png" />';
+                        return '<img width="15" height="15" src="resources/directions/northeast_1.png" />';
                         break;
                     case 'WNW':
-                        return '<img width="13" height="13" src="resources/directions/northwest.png" />';
+                        return '<img width="15" height="15" src="resources/directions/northwest_1.png" />';
                         break;
                     case 'NNW':
-                        return '<img width="13" height="13" src="resources/directions/northwest.png" />';
+                        return '<img width="15" height="15" src="resources/directions/northwest_1.png" />';
                         break;
                     case 'SSW':
-                        return '<img width="13" height="13" src="resources/directions/southwest.png" />';
+                        return '<img width="15" height="15" src="resources/directions/southwest_1.png" />';
                         break;
                     case 'WSW':
-                        return '<img width="13" height="13" src="resources/directions/southwest.png" />';
+                        return '<img width="15" height="15" src="resources/directions/southwest_1.png" />';
                         break;
                     case 'SSE':
-                        return '<img width="13" height="13" src="resources/directions/southeast.png" />';
+                        return '<img width="15" height="15" src="resources/directions/southeast_1.png" />';
                         break;
                     case 'ESE':
-                        return '<img width="13" height="13" src="resources/directions/southeast.png" />';
+                        return '<img width="15" height="15" src="resources/directions/southeast_1.png" />';
                     default:
-                        return '<img width="13" height="13" src="resources/directions/north.png" />';
+                        return '<img width="15" height="15" src="resources/directions/north_1.png" />';
                 }
             }
         }
