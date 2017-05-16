@@ -1,28 +1,52 @@
 Ext.define('ES.view.Layout.Toolbar.ToolbarController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.toolbar',
+   
 
-     onImageClick: function (image, e, options) {
-        var menu = this.getView();
-        var user_lang = this.getId();
-        menu.setId(image.id);
-        switch (image.id) {
-            case 'en':
-                user_lang = 'en';
-                break;
-            case 'pt_PT':
-                user_lang = 'pt_PT';
-                break;
-            case 'es':
-                user_lang = 'es';
-                break;
-            case 'fr':
-                user_lang = 'fr';
-                break;
-            default:
-                user_lang = 'en';
+    onImageClick: function (image, e, options) {
+        var img = this.getView();
+        var userlang = this.getId();
+        img.setId(image.id);
+        switch (userlang) {
+           case 'en':
+               lang = 'en';
+               break;
+           case 'pt_PT':
+               lang = 'pt_PT';
+               break;
+           case 'es':
+               lang = 'es';
+               break;
+           case 'fr':
+               lang = 'fr';
+               break;
+           default:
+               lang = 'en';
         }
         localStorage.setItem("user-lang", lang);
         location.reload();
     },
+
+    /*init: function () {
+        var lang = localStorage ? (localStorage.getItem('user-lang') || 'en') : 'en';
+        btn = this.getView();
+        btn.setId(lang);
+        switch (lang) {
+            case 'en':
+                btn.setId('en');
+                break;
+            case 'pt_PT':
+                btn.setId('pt_PT');
+                break;
+            case 'es':
+                btn.setId('es');
+                break;
+            case 'fr':
+                btn.setId('fr');
+                break;
+            default:
+                btn.setId('en');
+                break;
+        }
+    }*/
 });
