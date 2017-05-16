@@ -6,17 +6,23 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
         'ES.view.Layout.Locale.Translation',
         'ES.util.Helper.GlobalVars',
     ],
+    border: 1,
+    style: {
+       borderColor: 'black',
+       borderStyle: 'solid'
+    },
     controller: 'toolbar',
     viewModel: 'toolbar',
-    items: ["<-", {
+    items: [{
         xtype: 'image',
         alt: 'logo',
         id: 'logo',
         src: 'resources/images/logo.png',
-        width: 90,
-        height: 35,
+        width: 80,
+        height: 30,
         style: {
-            "margin-left": "-16px"
+            "margin-right": "22px",
+            "margin-left": "5px"
         },
         listeners: {
             afterrender: function () {
@@ -29,13 +35,7 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
             }
         }
     },
-        {
-            xtype: 'tbspacer',
-            width: 20
-        },
-        /* {
-             xtype: 'translationbtn'
-         },*/
+
         {
             xtype: 'image',
             id: 'en',
@@ -109,7 +109,7 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
             width: 15,
             height: 15,
             style: {
-
+             "margin-right": "20px"
             },
             listeners: {
                 afterrender: function () {
