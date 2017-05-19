@@ -1,0 +1,32 @@
+[2017-05-17 09:46:55.602] [INFO] server - Server is listening on port 8080
+[2017-05-17 09:49:26.336] [INFO] server - Connection Accepted.
+[2017-05-17 09:49:26.340] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1495442630000,"type":"auth","lp":"XX-XX-XX","userlang":"en"}
+[2017-05-17 09:49:26.340] [INFO] server - Total Clients: 1
+[2017-05-17 09:55:25.098] [INFO] server - Connection Closed Peer ::ffff:192.168.1.113
+[2017-05-17 09:55:27.887] [INFO] server - Connection Accepted.
+[2017-05-17 09:55:27.890] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":159691,"epoch":1495442630000,"type":"auth","lp":"XX-XX-XX","userlang":"en"}
+[2017-05-17 09:55:27.890] [INFO] server - Total Clients: 1
+[2017-05-17 10:32:37.576] [INFO] server - Connection Closed Peer ::ffff:192.168.1.113
+[2017-05-17 12:28:18.930] [INFO] server - Connection Accepted.
+[2017-05-17 12:28:18.932] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1513077534000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-17 12:28:18.932] [INFO] server - Total Clients: 1
+[2017-05-17 12:34:31.714] [INFO] server - Connection Closed Peer ::ffff:192.168.1.113
+[2017-05-17 12:34:54.279] [INFO] server - Connection Accepted.
+[2017-05-17 12:34:54.281] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1513077534000,"type":"auth","lp":"XX-XX-XX"}
+[2017-05-17 12:34:54.281] [INFO] server - Total Clients: 1
+[2017-05-17 12:35:06.642] [INFO] server - Connection Closed Peer ::ffff:192.168.1.113
+[2017-05-17 17:15:29.013] [INFO] server - Connection Accepted.
+[2017-05-17 17:15:29.019] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1495442630000,"type":"auth","lp":"XX-XX-XX","userlang":"en"}
+[2017-05-17 17:15:29.019] [INFO] server - Total Clients: 1
+[2017-05-17 17:17:24.615] [INFO] server - Connection Closed Peer ::ffff:192.168.1.113
+[2017-05-17 17:17:27.709] [INFO] server - Connection Accepted.
+[2017-05-17 17:17:27.714] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1495442630000,"type":"auth","lp":"XX-XX-XX","userlang":"en"}
+[2017-05-17 17:17:27.714] [INFO] server - Total Clients: 1
+[2017-05-17 17:28:35.681] [INFO] server - Server is listening on port 8080
+[2017-05-17 17:28:41.552] [INFO] server - Connection Accepted.
+[2017-05-17 17:28:41.568] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1495442630000,"type":"auth","lp":"XX-XX-XX","userlang":"en"}
+[2017-05-17 17:28:41.568] [INFO] server - Total Clients: 1
+[2017-05-17 17:28:42.210] [INFO] server - Connection Accepted.
+[2017-05-17 17:28:42.211] [INFO] server - Received Message: {"lng":-8.6568726,"lat":41.1628634,"vid":131653,"epoch":1495442630000,"type":"auth","lp":"XX-XX-XX","userlang":"en"}
+[2017-05-17 17:28:42.211] [INFO] server - Total Clients: 2
+[2017-05-17 17:51:04.211] [INFO] server - Connection Closed Peer ::ffff:192.168.1.113

@@ -1,11 +1,19 @@
 Ext.define('ES.util.Helper.Initialize', {
     statics: {
 
+        sendId: function (client, dec) {
+            var tokenId = {};
+            tokenId.type = "token";
+            tokenId.id = dec;
+            client.send(JSON.stringify(tokenId));
+        },
+
         /**
         * Send the client informations to the server when the application starts
         * @param {WebSocket} client User's Web Sccket
         * @param {string} dec Decrypted token (contains the user informations)
         */
+        
         sendData: function (client, dec) {
             client.send(dec);
         },
