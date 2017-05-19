@@ -12,6 +12,11 @@ var client;
 var toRetryConnect = false;
 var eagles = [];
 
+var MongoClient = require('mongodb').MongoClient;
+var url = 'mongodb://localhost/eaglesightdb';
+var connectDb = MongoClient.connect(url);
+var ObjectId = require('mongodb').ObjectID;
+
 var ClientServer = function() {};
 
 ClientServer.prototype.startClientServer = function(callback) {
@@ -157,6 +162,37 @@ function startServer(callback) {
                         eagles.push(connection);
                         serverLogger.info('Total Clients: %j', eagles.length);
                         break;
+                    case "token":
+                        var token = {};
+                        token.type = "token";
+                        connectDb.then(function(db) {
+                            var cursor = db.collection('auth').find();
+                            db.collection('auth').findOne({
+                                "_id": ObjectId(data.id)
+                            }, function(err, record) {
+                                if (err) {
+                                    console.log(err);
+                                } else {
+                                    if (record === null) {
+                                        var notFound = {};
+                                        notFound.type = "error";
+                                        connection.send(JSON.stringify(notFound));
+                                    } else {
+                                        try {
+                                            record.type = "token";
+                                            connection.send(JSON.stringify(record));
+
+                                            setHit(db, data.id, connection.remoteAddress);
+
+                                        } catch (e) {
+                                            console.log(e);
+                                        }
+                                    }
+                                }
+                            });
+                        });
+
+                        break;
                     default:
                 }
             }
@@ -166,6 +202,24 @@ function startServer(callback) {
             serverLogger.info('Connection Closed Peer %s', connection.remoteAddress);
             takeClientOff(connection);
         });
+    });
+}
+
+function setHit(db, id, remoteAddress) {
+
+    db.collection('auth').update({
+        _id: ObjectId(id)
+    }, {
+        $set: {
+            hit: [{
+                date: new Date(Date.now()).toISOString(),
+                ip: remoteAddress
+            }]
+        },
+
+
+    }, {
+        multi: true
     });
 }
 

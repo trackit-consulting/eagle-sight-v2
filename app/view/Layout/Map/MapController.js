@@ -27,7 +27,7 @@ Ext.define('ES.view.Layout.Map.MapController', {
         listen: {
             component: {
                 'map': {
-                    mapready: function (gmappanel) {
+                    mapready: function(gmappanel) {
 
                         gmappanel.gmap.setZoom(6);
                         var isInitialized = false;
@@ -38,31 +38,17 @@ Ext.define('ES.view.Layout.Map.MapController', {
                             var sendPing;
                             if (!ES.util.Helper.Validations.validateToken()) {
                                 //Validate and retreive token
-                                if (!isInitialized) {
-                                    ES.util.Helper.Validations.validateTokenProperties(ES.util.Helper.Token.decryptToken());
-                                    ES.util.Helper.Token.retreiveTokenProperties(ES.util.Helper.Token.decryptToken());
-                                    //Countdown to show how long does it take for the link to expire
-                                    ES.util.Helper.Counter.startNewCountdown(Ext.getStore('timeline'), Ext.getStore('routedata'));
-                                }
-                                setTimeout(function () {
+                                setTimeout(function() {
                                     if (!ES.util.Helper.GlobalVars.isOffline) {
-                                        //Recover all the saved data in sessions and shows to the user when the page refreshes
-                                        if (!isInitialized) {
-                                            ES.util.Helper.Initialize.reloadSavedData(Ext.getStore('timeline'), localStorage.getItem('mid'));
-                                            ES.util.Helper.Polyline.initPolylineDraw(gmappanel.gmap);
-                                        }
                                         //Creates a new Websocket
                                         client = new WebSocket(ES.util.Helper.GlobalVars.ws, ES.util.Helper.GlobalVars.protocol);
-                                        client.onopen = function () {
+                                        client.onopen = function() {
                                             //ES.util.Helper.Alerts.wsOpenedAlert();
-                                            //Ext.getCmp("con").setSrc("resources/connected/green-ball.png");
                                             ES.util.Helper.GlobalVars.countPing = 1;
                                             //Sends the token data to the server
-                                            ES.util.Helper.Initialize.sendData(client, ES.util.Helper.Token.decryptToken());
-
+                                            ES.util.Helper.Initialize.sendId(client, ES.util.Helper.Token.tokenId());
                                             //Adds a new marker to point the route destination
-                                            ES.util.Helper.Initialize.addDestinationMarker(localStorage.getItem('dstLat'), localStorage.getItem('dstLng'), gmappanel.gmap);
-                                            sendPing = setInterval(function () {
+                                            sendPing = setInterval(function() {
                                                 var ping = {};
                                                 ping.type = "ping";
                                                 client.send(JSON.stringify(ping));
@@ -72,29 +58,46 @@ Ext.define('ES.view.Layout.Map.MapController', {
                                                 }
                                             }, 15000);
                                         };
-                                        client.onerror = function () {
+                                        client.onerror = function() {
                                             ES.util.Helper.Alerts.wsErrorAlert();
                                         };
-                                        client.onclose = function () {
+                                        client.onclose = function() {
                                             ES.util.Helper.Alerts.wsClosedAlert();
-                                            setTimeout(function () {
-
+                                            setTimeout(function() {
                                                 isInitialized = true;
                                                 startService();
                                             }, 10000);
                                             clearInterval(sendPing);
                                             ES.util.Helper.GlobalVars.countPing = 0;
+                                            ES.util.Helper.GlobalVars.countTime = 0;
                                         };
-                                        client.onmessage = function (e) {
+                                        client.onmessage = function(e) {
                                             if (!ES.util.Helper.GlobalVars.isOffline) {
                                                 //Clean the timeline if necessary
                                                 if (e && e.data) {
                                                     if (JSON.parse(e.data).type === "pong") {
                                                         ES.util.Helper.GlobalVars.countPing = 1;
+                                                    } else if (JSON.parse(e.data).type === "token") {
+                                                        ES.util.Helper.Token.retreiveTokenProperties(JSON.parse(e.data));
+                                                        ES.util.Helper.Initialize.addDestinationMarker(localStorage.getItem('dstLat'), localStorage.getItem('dstLng'), gmappanel.gmap);
+                                                        var auth = {};
+                                                        auth.type = "auth";
+                                                        auth.vid = JSON.parse(e.data).vid;
+                                                        client.send(JSON.stringify(auth));
+                                                        //Countdown to show how long does it take for the link to expire
+                                                        ES.util.Helper.Counter.startNewCountdown(Ext.getStore('timeline'), Ext.getStore('routedata'), JSON.parse(e.data).epoch);
+                                                        //Recover all the saved data in sessions and shows to the user when the page refreshes
+                                                        if (!isInitialized) {
+                                                            ES.util.Helper.Initialize.reloadSavedData(Ext.getStore('timeline'), localStorage.getItem('mid'));
+                                                            ES.util.Helper.Polyline.initPolylineDraw(gmappanel.gmap);
+                                                        }
+                                                    } else if (JSON.parse(e.data).type === "error") {
+                                                        client.close();
+                                                        Ext.toast(locale.tokenerror);
                                                     } else {
                                                         ES.util.Helper.Timeline.cleanTimeline(Ext.getStore('timeline'));
                                                         //Save the received data
-                                                        ES.util.Helper.Savedata.saveReceivedData(parseFloat(JSON.parse(e.data).params.lastRecord.loc.lat), parseFloat(JSON.parse(e.data).params.lastRecord.loc.lon), parseFloat(localStorage.getItem('dstLat')), parseFloat(localStorage.getItem('dstLng')),parseFloat(JSON.parse(e.data).params.lastRecord.gsp));
+                                                        ES.util.Helper.Savedata.saveReceivedData(parseFloat(JSON.parse(e.data).params.lastRecord.loc.lat), parseFloat(JSON.parse(e.data).params.lastRecord.loc.lon), parseFloat(localStorage.getItem('dstLat')), parseFloat(localStorage.getItem('dstLng')), parseFloat(JSON.parse(e.data).params.lastRecord.gsp));
                                                         //Save the coordinates to draw on the map
                                                         ES.util.Helper.Savedata.saveCoordinates(parseFloat(JSON.parse(e.data).params.lastRecord.loc.lat), parseFloat(JSON.parse(e.data).params.lastRecord.loc.lon));
                                                         //Update the route bar with the last received data

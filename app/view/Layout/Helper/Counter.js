@@ -10,8 +10,8 @@ Ext.define('ES.util.Helper.Counter', {
         * @param {object[]} timelineStore Client's Timeline Store
         * @param {object[]} routeStore Client's Route bar Store
         */
-        startNewCountdown: function (timelineStore, routeStore) {
-            var getEpochEnding = new Date(parseInt(localStorage.getItem('ctdTime')));
+        startNewCountdown: function (timelineStore, routeStore, epoch) {
+            var getEpochEnding = new Date(parseInt(epoch));
             var updateTime = setInterval(function () {
                 var getTimeNow = new Date();
                 var timeZone = getTimeNow.getTimezoneOffset();

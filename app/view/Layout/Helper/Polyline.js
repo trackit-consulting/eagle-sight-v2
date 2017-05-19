@@ -51,12 +51,12 @@ Ext.define('ES.util.Helper.Polyline', {
             }
             var getDirection;
 
-            if(ES.util.Helper.Polyline.getLineSymbol(parseInt(ES.util.Helper.GlobalVars.vel), ES.util.Helper.Polyline.isParked())){
+            if (ES.util.Helper.Polyline.getLineSymbol(parseInt(ES.util.Helper.GlobalVars.vel), ES.util.Helper.Polyline.isParked())) {
                 getDirection = ES.util.Helper.Polyline.getPolylineMarker(ES.util.Helper.GlobalVars.currentDirection);
-            }else{
+            } else {
                 getDirection = 'resources/pointers/pointer_stop_shrink.gif';
             }
-            
+
             var licensePlate = new google.maps.MarkerImage('resources/pointers/pointer_label.gif',
                 new google.maps.Size(86, 32),
                 new google.maps.Point(0, 0),
@@ -74,7 +74,7 @@ Ext.define('ES.util.Helper.Polyline', {
                 position: flightPath.getPath().getAt(flightPath.getPath().getLength() - 1),
                 map: map,
                 optimized: false,
-                zIndex:99999999
+                zIndex: 99999999
             });
 
             ES.util.Helper.GlobalVars.markers.push(marker);
@@ -82,22 +82,26 @@ Ext.define('ES.util.Helper.Polyline', {
             google.maps.event.addDomListener(marker, 'click', function() {
                 ES.util.Helper.Timeline.showAddress(marker.getPosition().lat(), marker.getPosition().lng(), Ext.ComponentQuery.query('map')[0]);
             });
-            
-            var test;
+
+            var showLp;
             google.maps.event.addDomListener(marker, 'mouseover', function() {
-              test = new google.maps.Marker({
-                icon: licensePlate,
-                label: {text: localStorage.getItem("vhcLp"), color: "black", fontSize: "10px"},
-                position: flightPath.getPath().getAt(flightPath.getPath().getLength() - 1),
-                map: map,
-                optimized: false
-            });
+                showLp = new google.maps.Marker({
+                    icon: licensePlate,
+                    label: {
+                        text: localStorage.getItem("vhcLp"),
+                        color: "black",
+                        fontSize: "10px"
+                    },
+                    position: flightPath.getPath().getAt(flightPath.getPath().getLength() - 1),
+                    map: map,
+                    optimized: false
+                });
 
 
             });
 
             google.maps.event.addDomListener(marker, 'mouseout', function() {
-                   test.setMap(null);  
+                showLp.setMap(null);
 
             });
         },
@@ -159,7 +163,7 @@ Ext.define('ES.util.Helper.Polyline', {
                     return 'resources/pointers/pointer_idle_shrink.gif';
             }
         },
-        
+
         /**
          * Draw Marker
          * @param {object} routeStore Route Bar Store
