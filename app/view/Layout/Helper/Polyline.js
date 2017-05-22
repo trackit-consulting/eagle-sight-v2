@@ -84,7 +84,9 @@ Ext.define('ES.util.Helper.Polyline', {
             });
 
             var showLp;
+            var isVisible;
             google.maps.event.addDomListener(marker, 'mouseover', function() {
+                isVisible = true;
                 showLp = new google.maps.Marker({
                     icon: licensePlate,
                     label: {
@@ -96,13 +98,11 @@ Ext.define('ES.util.Helper.Polyline', {
                     map: map,
                     optimized: false
                 });
-
-
             });
 
             google.maps.event.addDomListener(marker, 'mouseout', function() {
+                isVisible = false;
                 showLp.setMap(null);
-
             });
         },
 
