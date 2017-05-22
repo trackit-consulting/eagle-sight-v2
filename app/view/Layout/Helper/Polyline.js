@@ -39,16 +39,14 @@ Ext.define('ES.util.Helper.Polyline', {
                 return true;
             }
         },
-
         /**
          * Draw polyline points
-         * @param {string[]} vel Receive route path
+         * @param {object[]} flightPath Route Flight Path
          * @param {object} map Google Maps Widget
          */
         drawPoints: function(flightPath, map) {
-            for (var i = 0; i < ES.util.Helper.GlobalVars.markers.length; i++) {
-                ES.util.Helper.GlobalVars.markers[i].setMap(null);
-            }
+            ES.util.Helper.Polyline.cleanMarkers();
+
             var getDirection;
 
             if (ES.util.Helper.Polyline.getLineSymbol(parseInt(ES.util.Helper.GlobalVars.vel), ES.util.Helper.Polyline.isParked())) {
@@ -83,6 +81,23 @@ Ext.define('ES.util.Helper.Polyline', {
                 ES.util.Helper.Timeline.showAddress(marker.getPosition().lat(), marker.getPosition().lng(), Ext.ComponentQuery.query('map')[0]);
             });
 
+            ES.util.Helper.Polyline.addListeners(flightPath, marker, licensePlate, map);
+
+        },
+        cleanMarkers: function() {
+            for (var i = 0; i < ES.util.Helper.GlobalVars.markers.length; i++) {
+                ES.util.Helper.GlobalVars.markers[i].setMap(null);
+            }
+        },
+
+        /**
+         * Add Listeners
+         * @param {object[]} flightPath Route Flight Path
+         * @param {object} marker License Plate Marker
+         * @param {object} licensePlate License Plate Image
+         * @param {object} map Map Widget
+         */
+        addListeners: function(flightPath, marker, licensePlate, map) {
             var showLp;
             var isVisible;
             google.maps.event.addDomListener(marker, 'mouseover', function() {
@@ -105,7 +120,7 @@ Ext.define('ES.util.Helper.Polyline', {
                 showLp.setMap(null);
             });
         },
-
+        
         /**
          * Draw Marker
          * @param {string[]} value Receive Marker Direction

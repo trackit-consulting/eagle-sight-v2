@@ -5,13 +5,16 @@ Ext.define('ES.view.Layout.Locale.TranslationController', {
         'ES.util.Helper.Mobile'
     ],
     onMenuItemClick: function (item, e, options) {
+        /*
         var menu = this.getView();
         menu.setIconCls(item.iconCls);
         menu.setText(item.text);
         localStorage.setItem("user-lang", item.iconCls);
         location.reload();
+        */
     },
     init: function () {
+        /*
         var lang = localStorage ? (localStorage.getItem('user-lang') || 'en') : 'en',
             button = this.getView();
         button.setIconCls(lang);
@@ -31,5 +34,6 @@ Ext.define('ES.view.Layout.Locale.TranslationController', {
             default:
                 ES.util.Helper.Mobile.setText('English', button);
         }
+        */
     }
 });
