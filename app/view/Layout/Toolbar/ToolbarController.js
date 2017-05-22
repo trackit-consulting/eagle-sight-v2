@@ -5,7 +5,7 @@ Ext.define('ES.view.Layout.Toolbar.ToolbarController', {
 
     onImageClick: function (image, e, options) {
         var img = this.getView();
-        var userlang = this.getId();
+        var userlang = Ext.getCmp();
         img.setId(image.id);
         switch (userlang) {
            case 'en':
@@ -23,30 +23,29 @@ Ext.define('ES.view.Layout.Toolbar.ToolbarController', {
            default:
                lang = 'en';
         }
-        localStorage.setItem("user-lang", lang);
+        console.log(userlang);
+        localStorage.setItem("user-lang", userlang);
         location.reload();
     },
 
-    /*init: function () {
+    init: function () {
         var lang = localStorage ? (localStorage.getItem('user-lang') || 'en') : 'en';
-        btn = this.getView();
-        btn.setId(lang);
-        switch (lang) {
-            case 'en':
-                btn.setId('en');
-                break;
-            case 'pt_PT':
-                btn.setId('pt_PT');
-                break;
-            case 'es':
-                btn.setId('es');
-                break;
-            case 'fr':
-                btn.setId('fr');
-                break;
-            default:
-                btn.setId('en');
-                break;
-        }
-    }*/
+        /*var userlang = Ext.getCmp();
+      switch (userlang) {
+           case 'en':
+               lang = 'en';
+               break;
+           case 'pt_PT':
+               lang = 'pt_PT';
+               break;
+           case 'es':
+               lang = 'es';
+               break;
+           case 'fr':
+               lang = 'fr';
+               break;
+           default:
+               lang = 'en';
+        }*/
+    }
 });
