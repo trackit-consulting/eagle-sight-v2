@@ -8,7 +8,6 @@ Ext.define('ES.util.Helper.Alerts', {
             Ext.Msg.alert(locale.alert, locale.end);
         },
         wsErrorAlert: function () {
-
             Ext.Msg.alert(locale.alert, locale.connecterror);
         },
 

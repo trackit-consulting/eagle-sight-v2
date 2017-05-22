@@ -19,6 +19,12 @@ var config = {
       port: 8080,
       domain: 'ws://services.local'
     }
+  },
+  mongo: {
+    remote: {
+      host: '10.0.0.160',
+      port: 45555
+    }
   }
 };
 module.exports = config;
