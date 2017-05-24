@@ -78,6 +78,7 @@ Ext.define('ES.util.Helper.Polyline', {
             ES.util.Helper.GlobalVars.markers.push(marker);
 
             google.maps.event.addDomListener(marker, 'click', function() {
+
                 ES.util.Helper.Timeline.showAddress(marker.getPosition().lat(), marker.getPosition().lng(), Ext.ComponentQuery.query('map')[0]);
             });
 
@@ -98,11 +99,14 @@ Ext.define('ES.util.Helper.Polyline', {
          * @param {object} map Map Widget
          */
         addListeners: function(flightPath, marker, licensePlate, map) {
-            var showLp;
-            var isVisible;
-            google.maps.event.addDomListener(marker, 'mouseover', function() {
-                isVisible = true;
-                showLp = new google.maps.Marker({
+            var showLp, isVisible, action;
+            if (ES.util.Helper.Mobile.isMobile()) {
+                action = 'click';
+            }else{
+                action = 'mouseover';
+            }
+            google.maps.event.addDomListener(marker, action, function() {
+            showLp = new google.maps.Marker({
                     icon: licensePlate,
                     label: {
                         text: localStorage.getItem("vhcLp"),
@@ -113,10 +117,11 @@ Ext.define('ES.util.Helper.Polyline', {
                     map: map,
                     optimized: false
                 });
+            google.maps.event.addDomListener(showLp, "click", function() {
+                 showLp.setMap(null);
             });
-
+            });
             google.maps.event.addDomListener(marker, 'mouseout', function() {
-                isVisible = false;
                 showLp.setMap(null);
             });
         },

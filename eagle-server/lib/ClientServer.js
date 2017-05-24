@@ -13,8 +13,13 @@ var toRetryConnect = false;
 var eagles = [];
 
 var MongoClient = require('mongodb').MongoClient;
-var url = 'mongodb://localhost/eaglesightdb';
-var connectDb = MongoClient.connect(url);
+
+var urlEs = 'mongodb://localhost/eaglesightdb';
+var urlMbi = 'mongodb://10.0.0.160:45555/mbi';
+
+var connectDbEs = MongoClient.connect(urlEs);
+var connectDbMbi = MongoClient.connect(urlMbi);
+
 var ObjectId = require('mongodb').ObjectID;
 
 var ClientServer = function() {};
@@ -161,12 +166,42 @@ function startServer(callback) {
                         connection.vid = data.vid;
                         eagles.push(connection);
                         serverLogger.info('Total Clients: %j', eagles.length);
+                        connectDbMbi.then(function(db) {
+                            db.collection('mobile_info').findOne({
+                                mid: data.vid
+                            }, function(err, record) {
+                                if (err) {
+                                    console.log(err);
+                                } else {
+                                if(record === null){
+
+                                }else{
+                                var receiveLastData = JSON.stringify(record);
+                                var lastDataObj = JSON.parse(receiveLastData);
+                                var lastData =  {
+                                    "params": {
+                                        "lastRecord": {
+                                            "vid": data.vid,
+                                            "loc": {
+                                                "lon": lastDataObj.pos.loc.lon,
+                                                "lat": lastDataObj.pos.loc.lat
+                                            },
+                                            "gsp": lastDataObj.pos.gsp,
+                                            "hdg": lastDataObj.pos.hdg
+                                        }
+                                    }
+                                };
+                                connection.send(JSON.stringify(lastData));
+                            }
+                                }
+
+                            });
+                        });
                         break;
                     case "token":
                         var token = {};
                         token.type = "token";
-                        connectDb.then(function(db) {
-                            var cursor = db.collection('auth').find();
+                        connectDbEs.then(function(db) {
                             db.collection('auth').findOne({
                                 "_id": ObjectId(data.id)
                             }, function(err, record) {
@@ -181,9 +216,7 @@ function startServer(callback) {
                                         try {
                                             record.type = "token";
                                             connection.send(JSON.stringify(record));
-
                                             setHit(db, data.id, connection.remoteAddress);
-
                                         } catch (e) {
                                             console.log(e);
                                         }
