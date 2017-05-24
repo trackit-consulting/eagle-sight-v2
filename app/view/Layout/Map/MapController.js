@@ -106,6 +106,7 @@ Ext.define('ES.view.Layout.Map.MapController', {
                                                         //Starts polyline drawing
                                                         ES.util.Helper.Polyline.initPolylineDraw(gmappanel.gmap, ES.util.Helper.Polyline.isParked());
                                                         //Follow the last received address, changing the map focus/motion
+
                                                         ES.util.Helper.Polyline.focusOnAddress(gmappanel.gmap);
                                                     }
                                                 }

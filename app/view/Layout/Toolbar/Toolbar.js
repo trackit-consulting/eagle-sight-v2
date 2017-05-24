@@ -45,7 +45,8 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
             src: 'resources/nv_flags/United-Kingdom.png',
             listeners: {
                 el: {
-                    click: "onImageClick"
+                    click: "onImageClick",
+                    mouseover: "changeCursor"
                 }
             }
         },
@@ -62,7 +63,8 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
             src: 'resources/nv_flags/Portugal.png',
             listeners: {
                 el: {
-                    click: "onImageClick"
+                    click: "onImageClick",
+                    mouseover: "changeCursor"
                 }
             }
         },
@@ -79,7 +81,8 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
             src: 'resources/nv_flags/France.png',
             listeners: {
                 el: {
-                    click: "onImageClick"
+                    click: "onImageClick",
+                    mouseover: "changeCursor"
                 }
             }
 
@@ -97,7 +100,8 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
             src: 'resources/nv_flags/Spain.png',
             listeners: {
                 el: {
-                    click: "onImageClick"
+                    click: "onImageClick",
+                    mouseover: "changeCursor"
                 }
             }
 

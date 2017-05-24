@@ -2,8 +2,11 @@ Ext.define('ES.view.Layout.Toolbar.ToolbarController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.toolbar',
 
+    changeCursor: function(image, e, options){
+        Ext.getCmp(e.id).setStyle('cursor', 'pointer');
+    },
+
     onImageClick: function (image, e, options) {
-        var img = this.getView();
         var lang = '';
         switch (e.id) {
            case 'en':

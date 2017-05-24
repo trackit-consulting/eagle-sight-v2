@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV2QUPhqKB67SnuoQLO573e5N2yIaQiwQ&v=3"></script>
     <title>ES</title>
+    <link rel="shortcut icon" href="resources/favicon/favicon.ico" type="image/ico" />
     <script src="resources/translations/locale.js"></script>
     <!-- The line below must be kept intact for Sencha Cmd to build your application -->
-
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <script id="microloader" data-app="17d07682-7beb-4e19-9e7b-8ba6606890e5" type="text/javascript">var Ext=Ext||{};Ext.manifest=Ext.manifest||"app.json";Ext=Ext||{};
 Ext.Boot=Ext.Boot||function(f){function l(b){if(b.$isRequest)return b;b=b.url?b:{url:b};var e=b.url,e=e.charAt?[e]:e,a=b.charset||d.config.charset;x(this,b);delete this.url;this.urls=e;this.charset=a}function r(b){if(b.$isEntry)return b;var e=b.charset||d.config.charset,a=Ext.manifest,a=a&&a.loader,k=void 0!==b.cache?b.cache:a&&a.cache,c;d.config.disableCaching&&(void 0===k&&(k=!d.config.disableCaching),!1===k?c=+new Date:!0!==k&&(c=k),c&&(a=a&&a.cacheParam||d.config.disableCachingParam,c=a+"\x3d"+
 c));x(this,b);this.charset=e;this.buster=c;this.requests=[]}var n=document,q=[],t={disableCaching:/[?&](?:cache|disableCacheBuster)\b/i.test(location.search)||!/http[s]?\:/i.test(location.href)||/(^|[ ;])ext-cache=1/.test(n.cookie)?!1:!0,disableCachingParam:"_dc",loadDelay:!1,preserveScripts:!0,charset:"UTF-8"},u=/\.css(?:\?|$)/i,w=n.createElement("a"),y="undefined"!==typeof window,v={browser:y,node:!y&&"function"===typeof require,phantom:window&&(window._phantom||window.callPhantom)||/PhantomJS/.test(window.navigator.userAgent)},
@@ -65,11 +66,22 @@ c.updatedAssets.push(a)):a.uncache()}catch(h){l("Error parsing delta patch for "
 a.cache()}c.notifyUpdateReady()},notifyUpdateReady:function(){"checking"!==c.appCacheState&&c.updatedAssetsReady&&("updated"===c.appCacheState||c.updatedManifest)&&(c.appUpdate={updated:!0,app:"updated"===c.appCacheState,manifest:c.updatedManifest&&c.updatedManifest.exportContent()},c.fireAppUpdate())},fireAppUpdate:function(){Ext.GlobalEvents&&Ext.defer(function(){Ext.GlobalEvents.fireEvent("appupdate",c.appUpdate)},1E3)},checksum:function(a,c){if(!a||!c)return!1;var b=!0,e=c.length,f=a.substring(0,
 1);"/"==f?a.substring(2,e+2)!==c&&(b=!1):"f"==f?a.substring(10,e+10)!==c&&(b=!1):"."==f&&a.substring(1,e+1)!==c&&(b=!1);return b},parseResult:function(a){var c={};!a.exception&&0!==a.status||f.env.phantom?200<=a.status&&300>a.status||304===a.status||f.env.phantom||0===a.status&&0<a.content.length?c.content=a.content:c.error=!0:c.error=!0;return c}};return c}();Ext.manifest=Ext.manifest||"bootstrap";Ext.Microloader.run();</script>
 </head>
-<style>
-.x-panel-header-default .x-tool-tool-el{
-        background-color: #838a47 !important;
+  <style>
+    .x-panel-header-default .x-tool-tool-el, .x-toolbar-green .x-tool-tool-el{
+            background-color: transparent !important;
+            color: #b8c63f;
+
+    }
+    #timelineBar-placeholder{
+      border: 1px solid #323232 !important;
+    }
+    *{
+      font-family: 'PT Sans Narrow', sans-serif;
+    }
+    #timelineBar-placeholder-title-textEl, #timelineBar_header-title-textEl{
+        color:#b8c63f;
 }
-</style>
+  </style>
 <body></body>
 
 </html>

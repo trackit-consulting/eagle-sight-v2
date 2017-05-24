@@ -1,0 +1,134 @@
+[2017-05-23 09:27:08.473] [INFO] server - Server is listening on port 8080
+[2017-05-23 09:28:41.067] [INFO] server - Connection Accepted.
+[2017-05-23 09:28:41.532] [INFO] server - Received Message: {"type":"auth","vid":159691}
+[2017-05-23 09:28:41.532] [INFO] server - Total Clients: 1
+[2017-05-23 09:28:57.054] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 09:31:47.368] [INFO] server - Connection Accepted.
+[2017-05-23 09:31:47.726] [INFO] server - Received Message: {"type":"auth","vid":159691}
+[2017-05-23 09:31:47.726] [INFO] server - Total Clients: 1
+[2017-05-23 09:32:03.054] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 09:32:13.207] [INFO] server - Connection Accepted.
+[2017-05-23 09:32:13.230] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 09:32:13.230] [INFO] server - Total Clients: 1
+[2017-05-23 09:42:28.681] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 09:42:31.808] [INFO] server - Connection Accepted.
+[2017-05-23 09:42:31.812] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 09:42:31.812] [INFO] server - Total Clients: 1
+[2017-05-23 09:42:52.531] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 09:42:55.657] [INFO] server - Connection Accepted.
+[2017-05-23 09:42:55.662] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 09:42:55.662] [INFO] server - Total Clients: 1
+[2017-05-23 09:43:59.459] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 09:44:04.184] [INFO] server - Connection Accepted.
+[2017-05-23 09:44:04.204] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 09:44:04.204] [INFO] server - Total Clients: 1
+[2017-05-23 09:45:39.922] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 09:45:43.616] [INFO] server - Connection Accepted.
+[2017-05-23 09:45:43.628] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 09:45:43.628] [INFO] server - Total Clients: 1
+[2017-05-23 09:47:05.276] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 09:47:08.315] [INFO] server - Connection Accepted.
+[2017-05-23 09:47:08.363] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 09:47:08.363] [INFO] server - Total Clients: 1
+[2017-05-23 09:48:09.914] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 09:48:13.005] [INFO] server - Connection Accepted.
+[2017-05-23 09:48:13.009] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 09:48:13.010] [INFO] server - Total Clients: 1
+[2017-05-23 10:03:42.901] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 10:03:49.012] [INFO] server - Connection Accepted.
+[2017-05-23 10:03:49.019] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 10:03:49.020] [INFO] server - Total Clients: 1
+[2017-05-23 10:13:05.384] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 10:13:08.817] [INFO] server - Connection Accepted.
+[2017-05-23 10:13:09.116] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 10:13:09.116] [INFO] server - Total Clients: 1
+[2017-05-23 10:13:15.693] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 10:13:18.923] [INFO] server - Connection Accepted.
+[2017-05-23 10:13:18.928] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 10:13:18.928] [INFO] server - Total Clients: 1
+[2017-05-23 10:14:10.991] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 10:14:14.219] [INFO] server - Connection Accepted.
+[2017-05-23 10:14:14.223] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 10:14:14.223] [INFO] server - Total Clients: 1
+[2017-05-23 10:14:59.270] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 10:15:02.846] [INFO] server - Connection Accepted.
+[2017-05-23 10:15:02.983] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 10:15:02.983] [INFO] server - Total Clients: 1
+[2017-05-23 10:15:21.185] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 10:15:24.455] [INFO] server - Connection Accepted.
+[2017-05-23 10:15:24.492] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 10:15:24.492] [INFO] server - Total Clients: 1
+[2017-05-23 10:16:49.837] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 10:16:55.459] [INFO] server - Connection Accepted.
+[2017-05-23 10:16:55.468] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 10:16:55.469] [INFO] server - Total Clients: 1
+[2017-05-23 10:18:51.242] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 10:18:54.465] [INFO] server - Connection Accepted.
+[2017-05-23 10:18:54.493] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 10:18:54.493] [INFO] server - Total Clients: 1
+[2017-05-23 10:19:27.029] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 10:22:02.331] [INFO] server - Connection Accepted.
+[2017-05-23 10:22:02.337] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 10:22:02.337] [INFO] server - Total Clients: 1
+[2017-05-23 10:23:55.743] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 10:24:01.035] [INFO] server - Connection Accepted.
+[2017-05-23 10:24:01.038] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 10:24:01.038] [INFO] server - Total Clients: 1
+[2017-05-23 11:07:17.140] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 14:50:52.794] [INFO] server - Server is listening on port 8080
+[2017-05-23 14:53:07.884] [INFO] server - Connection Accepted.
+[2017-05-23 14:53:08.057] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 14:53:08.058] [INFO] server - Total Clients: 1
+[2017-05-23 14:53:56.389] [INFO] server - Server is listening on port 8080
+[2017-05-23 14:54:05.133] [INFO] server - Connection Accepted.
+[2017-05-23 14:54:05.155] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 14:54:05.155] [INFO] server - Total Clients: 1
+[2017-05-23 15:13:03.839] [INFO] server - Server is listening on port 8080
+[2017-05-23 15:13:13.055] [INFO] server - Connection Accepted.
+[2017-05-23 15:13:13.073] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 15:13:13.073] [INFO] server - Total Clients: 1
+[2017-05-23 16:10:12.162] [INFO] server - Server is listening on port 8080
+[2017-05-23 16:10:50.183] [INFO] server - Connection Accepted.
+[2017-05-23 16:10:50.295] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 16:10:50.295] [INFO] server - Total Clients: 1
+[2017-05-23 16:12:31.033] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 16:12:35.512] [INFO] server - Connection Accepted.
+[2017-05-23 16:12:35.581] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 16:12:35.582] [INFO] server - Total Clients: 1
+[2017-05-23 16:22:31.951] [INFO] server - Server is listening on port 8080
+[2017-05-23 16:22:37.626] [INFO] server - Connection Accepted.
+[2017-05-23 16:22:37.644] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 16:22:37.644] [INFO] server - Total Clients: 1
+[2017-05-23 16:22:39.701] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 16:22:45.286] [INFO] server - Connection Accepted.
+[2017-05-23 16:22:45.291] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 16:22:45.292] [INFO] server - Total Clients: 1
+[2017-05-23 16:23:06.087] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 16:23:11.171] [INFO] server - Connection Accepted.
+[2017-05-23 16:23:11.203] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 16:23:11.204] [INFO] server - Total Clients: 1
+[2017-05-23 16:23:52.385] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 16:24:04.404] [INFO] server - Connection Accepted.
+[2017-05-23 16:24:04.412] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 16:24:04.412] [INFO] server - Total Clients: 1
+[2017-05-23 16:25:13.152] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 16:25:18.610] [INFO] server - Connection Accepted.
+[2017-05-23 16:25:18.616] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 16:25:18.616] [INFO] server - Total Clients: 1
+[2017-05-23 16:28:46.183] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 16:28:53.692] [INFO] server - Connection Accepted.
+[2017-05-23 16:28:53.753] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 16:28:53.753] [INFO] server - Total Clients: 1
+[2017-05-23 16:29:17.047] [INFO] server - Connection Accepted.
+[2017-05-23 16:29:17.056] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 16:29:17.056] [INFO] server - Total Clients: 2
+[2017-05-23 17:26:13.664] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 17:26:13.738] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
+[2017-05-23 17:36:01.331] [INFO] server - Connection Accepted.
+[2017-05-23 17:36:01.340] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 17:36:01.340] [INFO] server - Total Clients: 1
+[2017-05-23 17:37:56.906] [INFO] server - Server is listening on port 8080
+[2017-05-23 17:38:03.515] [INFO] server - Connection Accepted.
+[2017-05-23 17:38:03.545] [INFO] server - Received Message: {"type":"auth","vid":106811}
+[2017-05-23 17:38:03.545] [INFO] server - Total Clients: 1
+[2017-05-23 17:41:11.194] [INFO] server - Connection Closed Peer ::ffff:192.168.1.118
