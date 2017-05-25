@@ -17,15 +17,6 @@ var MongoClient = require('mongodb').MongoClient;
 var uriEs = util.format("mongodb://%s/eaglesightdb", config.mongo.local.host);
 var uriMbi = util.format("mongodb://%s:%s/mbi", config.mongo.remote.host, config.mongo.remote.port);
 
-console.log(uriEs);
-/*
-var urlEs = 'mongodb://localhost/eaglesightdb';
-var urlMbi = 'mongodb://10.0.0.160:45555/mbi';
-*/
-
-var connectDbEs = MongoClient.connect(uriEs);
-var connectDbMbi = MongoClient.connect(uriMbi);
-
 var ObjectId = require('mongodb').ObjectID;
 
 var ClientServer = function() {};
@@ -167,11 +158,13 @@ function startServer(callback) {
                         connection.send(JSON.stringify(pong));
                         break;
                     case "auth":
+                    var connectDbMbi = MongoClient.connect(uriMbi);
                         serverLogger.info('Received Message: %j', data);
                         // Setting vid for connection
                         connection.vid = data.vid;
                         eagles.push(connection);
                         serverLogger.info('Total Clients: %j', eagles.length);
+                        //Receive data from the vehicle last added value
                         connectDbMbi.then(function(db) {
                             db.collection('mobile_info').findOne({
                                 mid: data.vid
@@ -179,34 +172,37 @@ function startServer(callback) {
                                 if (err) {
                                     console.log(err);
                                 } else {
-                                if(record === null){
-
-                                }else{
-                                var receiveLastData = JSON.stringify(record);
-                                var lastDataObj = JSON.parse(receiveLastData);
-                                var lastData =  {
-                                    "params": {
-                                        "lastRecord": {
-                                            "vid": data.vid,
-                                            "loc": {
-                                                "lon": lastDataObj.pos.loc.lon,
-                                                "lat": lastDataObj.pos.loc.lat
-                                            },
-                                            "gsp": lastDataObj.pos.gsp,
-                                            "hdg": lastDataObj.pos.hdg
-                                        }
+                                    if (record === null) {
+                                        console.log(err);
+                                    } else {
+                                        var receiveLastData = JSON.stringify(record);
+                                        var lastDataObj = JSON.parse(receiveLastData);
+                                        var lastData = {
+                                            "params": {
+                                                "lastRecord": {
+                                                    "vid": data.vid,
+                                                    "loc": {
+                                                        "lon": lastDataObj.pos.loc.lon,
+                                                        "lat": lastDataObj.pos.loc.lat
+                                                    },
+                                                    "gsp": lastDataObj.pos.gsp,
+                                                    "hdg": lastDataObj.pos.hdg
+                                                }
+                                            }
+                                        };
+                                        connection.send(JSON.stringify(lastData));
                                     }
-                                };
-                                connection.send(JSON.stringify(lastData));
-                            }
                                 }
 
                             });
+                            db.close();
                         });
                         break;
                     case "token":
+                    var connectDbEs = MongoClient.connect(uriEs);
                         var token = {};
                         token.type = "token";
+                        //Receive data from the token Id
                         connectDbEs.then(function(db) {
                             db.collection('auth').findOne({
                                 "_id": ObjectId(data.id)
@@ -230,7 +226,6 @@ function startServer(callback) {
                                 }
                             });
                         });
-
                         break;
                     default:
                 }

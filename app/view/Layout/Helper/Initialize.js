@@ -53,7 +53,8 @@ Ext.define('ES.util.Helper.Initialize', {
                     icon: markerImage,
                     position: pos,
                     title: 'Destination',
-                    map: gmappanel
+                    map: gmappanel,
+                    optimized: false
                 });
                 var infoWindow = new google.maps.InfoWindow({
                     content: "Destination Point",
