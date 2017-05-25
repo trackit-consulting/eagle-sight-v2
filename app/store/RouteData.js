@@ -28,8 +28,7 @@ Ext.define('ES.store.RouteData', {
             vel: '',
             countdown: '',
             lp: ''
-        },
-        ]
+        }]
     },
     proxy: {
         type: 'memory',

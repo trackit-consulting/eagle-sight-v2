@@ -6,24 +6,26 @@ Ext.define('ES.util.Helper.Polyline', {
          */
         initPolylineDraw: function(map) {
 
-            var flightPath1 = new google.maps.Polyline({
+            var polylineBorder = new google.maps.Polyline({
                 path: ES.util.Helper.GlobalVars.flightPathCoordinates,
-                strokeColor: '#fc302e', // border color
+                strokeColor: '#fc302e', 
                 strokeOpacity: 1.0,
-                strokeWeight: 7 // You can change the border weight here
+                strokeWeight: 7,
+                optimized: false
             });
 
-            var flightPath2 = new google.maps.Polyline({
+            var polyline = new google.maps.Polyline({
                 path: ES.util.Helper.GlobalVars.flightPathCoordinates,
                 strokeColor: '#d6adac',
                 strokeOpacity: 1.0,
-                strokeWeight: 4
+                strokeWeight: 4,
+                optimized: false
             });
 
-            ES.util.Helper.Polyline.drawPoints(flightPath1, map);
+            ES.util.Helper.Polyline.drawPoints(polyline, map);
 
-            flightPath1.setMap(map);
-            flightPath2.setMap(map);
+            polylineBorder.setMap(map);
+            polyline.setMap(map);
         },
 
         /**

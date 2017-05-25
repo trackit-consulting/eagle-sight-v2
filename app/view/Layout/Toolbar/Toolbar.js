@@ -41,12 +41,16 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
         id: 'en',
         alt: 'englandflag',
         width: 15,
-        height: 10,
+        height: 12,
         src: 'resources/flags/england.png',
+        style: {
+            "opacity": "0.5"
+        },
         listeners: {
             el: {
                 click: "onImageClick",
-                mouseover: "changeCursor"
+                mouseover: "over",
+                mouseout: "out"
             }
         }
     },
@@ -59,13 +63,16 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
         id: 'pt_PT',
         alt: 'portugalflag',
         width: 15,
-        height: 10,
-        opacity: 0.5,
+        height: 12,
         src: 'resources/flags/pt.png',
+        style: {
+            "opacity": "0.5"
+        },
         listeners: {
             el: {
                 click: "onImageClick",
-                mouseover: "changeCursor"
+                mouseover: "over",
+                mouseout: "out"
             }
         }
     },
@@ -78,13 +85,16 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
         id: 'fr',
         alt: 'franceflag',
         width: 15,
-        height: 10,
-        opacity: 0.5,
+        height: 12,
+        style: {
+            "opacity": "0.5"
+        },
         src: 'resources/flags/fr.png',
         listeners: {
             el: {
                 click: "onImageClick",
-                mouseover: "changeCursor"
+                mouseover: "over",
+                mouseout: "out"
             }
         }
 
@@ -98,13 +108,16 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
         id: 'es',
         alt: 'spainflag',
         width: 15,
-        height: 10,
-        opacity: 0.5,
+        height: 12,
+        style: {
+            "opacity": "0.5"
+        },
         src: 'resources/flags/es.png',
         listeners: {
             el: {
                 click: "onImageClick",
-                mouseover: "changeCursor"
+                mouseover: "over",
+                mouseout: "out"
             }
         }
 
@@ -114,7 +127,7 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
         alt: 'connection',
         id: 'con',
         width: 15,
-        height: 15,
+        height: 12,
         style: {
             "margin-right": "20px"
         },

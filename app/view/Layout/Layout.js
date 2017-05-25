@@ -55,7 +55,7 @@ Ext.define('ES.view.Layout.Layout', {
         height: 500,
         style: {
             background: ES.util.Helper.Colors.toolbarBg
-        },
+        }
        /* listeners: {
             afterrender: {
                 fn: function () {
