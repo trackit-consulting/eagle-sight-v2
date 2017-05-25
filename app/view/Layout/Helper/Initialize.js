@@ -43,7 +43,6 @@ Ext.define('ES.util.Helper.Initialize', {
         * @param {object} gmappanel Contains the Google Maps Widget
         */
         addDestinationMarker: function (lat, lng, gmappanel) {
-            setTimeout(function () {
             var markerImage = new google.maps.MarkerImage('resources/pointers/pointer_idle_shrink.gif',
                 new google.maps.Size(35, 35),
                 new google.maps.Point(0, 0),
@@ -57,10 +56,10 @@ Ext.define('ES.util.Helper.Initialize', {
                     map: gmappanel
                 });
                 var infoWindow = new google.maps.InfoWindow({
-                    content: "Destination Point"
+                    content: "Destination Point",
+                    disableAutoPan: true
                 });
                 infoWindow.open(gmappanel, marker);
-            }, 2000);
         },
 
         /**

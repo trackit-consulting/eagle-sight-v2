@@ -24,6 +24,9 @@ var config = {
     remote: {
       host: '10.0.0.160',
       port: 45555
+    },
+    local: {
+      host: 'localhost'
     }
   }
 };
