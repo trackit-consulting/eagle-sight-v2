@@ -4,6 +4,7 @@ Ext.define('ES.view.Layout.Toolbar.ToolbarController', {
 
     changeCursor: function(image, e, options){
         Ext.getCmp(e.id).setStyle('cursor', 'pointer');
+      //  Ext.getCmp(e.id).setStyle(opacity : 0.3);
     },
 
     onImageClick: function (image, e, options) {
