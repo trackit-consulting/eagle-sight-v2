@@ -4,7 +4,6 @@ Ext.define('ES.util.Helper.Counter', {
         ctdMinutes: 0,
         ctdHours: 0,
         ctdMillis: 0,
-
         /**
         * Show how many time will it take to expire the Link
         * @param {object[]} timelineStore Client's Timeline Store

@@ -78,16 +78,20 @@ Ext.define('ES.view.Layout.Map.MapController', {
                                                     if (JSON.parse(e.data).type === "pong") {
                                                         ES.util.Helper.GlobalVars.countPing = 1;
                                                     } else if (JSON.parse(e.data).type === "token") {
-                                                        ES.util.Helper.Token.retreiveTokenProperties(JSON.parse(e.data));
-                                                        ES.util.Helper.Initialize.addDestinationMarker(localStorage.getItem('dstLat'), localStorage.getItem('dstLng'), gmappanel.gmap);
-                                                        ES.util.Helper.Initialize.authClient(JSON.parse(e.data).vid, client);
                                                         //Countdown to show how long does it take for the link to expire
                                                         ES.util.Helper.Counter.startNewCountdown(Ext.getStore('timeline'), Ext.getStore('routedata'), JSON.parse(e.data).epoch);
-                                                        //Recover all the saved data in sessions and shows to the user when the page refreshes
-                                                        if (!isInitialized) {
-                                                            ES.util.Helper.Initialize.reloadSavedData(Ext.getStore('timeline'), localStorage.getItem('mid'));
-                                                            ES.util.Helper.Polyline.initPolylineDraw(gmappanel.gmap);
-                                                        }
+                                                        setTimeout(function() {
+                                                            if (!ES.util.Helper.GlobalVars.isOffline) {
+                                                                ES.util.Helper.Token.retreiveTokenProperties(JSON.parse(e.data));
+                                                                ES.util.Helper.Initialize.addDestinationMarker(localStorage.getItem('dstLat'), localStorage.getItem('dstLng'), gmappanel.gmap);
+                                                                ES.util.Helper.Initialize.authClient(JSON.parse(e.data).vid, client);
+                                                                //Recover all the saved data in sessions and shows to the user when the page refreshes
+                                                                if (!isInitialized) {
+                                                                    ES.util.Helper.Initialize.reloadSavedData(Ext.getStore('timeline'), localStorage.getItem('mid'));
+                                                                    ES.util.Helper.Polyline.initPolylineDraw(gmappanel.gmap);
+                                                                }
+                                                            }
+                                                        }, 1000);
                                                     } else if (JSON.parse(e.data).type === "error") {
                                                         client.close();
                                                         Ext.toast(locale.tokenerror);
@@ -106,7 +110,6 @@ Ext.define('ES.view.Layout.Map.MapController', {
                                                         //Starts polyline drawing
                                                         ES.util.Helper.Polyline.initPolylineDraw(gmappanel.gmap, ES.util.Helper.Polyline.isParked());
                                                         //Follow the last received address, changing the map focus/motion
-
                                                         ES.util.Helper.Polyline.focusOnAddress(gmappanel.gmap);
                                                     }
                                                 }

@@ -14,11 +14,17 @@ var eagles = [];
 
 var MongoClient = require('mongodb').MongoClient;
 
+var uriEs = util.format("mongodb://%s/eaglesightdb", config.mongo.local.host);
+var uriMbi = util.format("mongodb://%s:%s/mbi", config.mongo.remote.host, config.mongo.remote.port);
+
+console.log(uriEs);
+/*
 var urlEs = 'mongodb://localhost/eaglesightdb';
 var urlMbi = 'mongodb://10.0.0.160:45555/mbi';
+*/
 
-var connectDbEs = MongoClient.connect(urlEs);
-var connectDbMbi = MongoClient.connect(urlMbi);
+var connectDbEs = MongoClient.connect(uriEs);
+var connectDbMbi = MongoClient.connect(uriMbi);
 
 var ObjectId = require('mongodb').ObjectID;
 
