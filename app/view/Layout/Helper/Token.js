@@ -5,14 +5,15 @@ Ext.define('ES.util.Helper.Token', {
          * @param {string} dec Decrypted Token
          */
         retreiveTokenProperties: function (dec) {
-            var getLng = 0, getLat = 0, getCtd = 0, getLp = 0;
+            var getLng = 0, getLat = 0, getCtd = 0, getLp = 0, getLang = 0;
             //if (ES.util.Helper.Validations.validateJSON(dec) && ES.util.Helper.Validations.validateTokenProperties(dec)) {
                 getLng = dec.lng;
                 getLat = dec.lat;
                 getVhc = dec.vid;
                 getLp = dec.lp;
+                getLang = dec.userlang;
             //}
-            ES.util.Helper.Token.saveTokenProperties(getLng, getLat, getVhc, getLp);
+            ES.util.Helper.Token.saveTokenProperties(getLng, getLat, getVhc, getLp, getLang);
         },
 
         /**
@@ -23,11 +24,12 @@ Ext.define('ES.util.Helper.Token', {
          * @param {int} setType Set the vehicle type
          * @param {string} setLp Set the vehicle type
          */
-        saveTokenProperties: function (setLng, setLat, setVhc, setLp) {
+        saveTokenProperties: function (setLng, setLat, setVhc, setLp, setLang) {
             localStorage.setItem("dstLng", setLng);
             localStorage.setItem("dstLat", setLat);
             localStorage.setItem("mid", setVhc);
             localStorage.setItem("vhcLp", setLp);
+            localStorage.setItem("user-lang", setLang);
         },
 
         decryptToken: function () {
