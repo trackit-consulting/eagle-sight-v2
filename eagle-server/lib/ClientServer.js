@@ -14,7 +14,7 @@ var eagles = [];
 
 var MongoClient = require('mongodb').MongoClient;
 
-var uriEs = util.format("mongodb://%s/eaglesightdb", config.mongo.local.host);
+var uriEs = util.format("mongodb://%s/eaglesight", config.mongo.local.host);
 var uriMbi = util.format("mongodb://%s:%s/mbi", config.mongo.remote.host, config.mongo.remote.port);
 
 var ObjectId = require('mongodb').ObjectID;
