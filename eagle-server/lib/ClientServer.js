@@ -14,7 +14,7 @@ var eagles = [];
 
 var MongoClient = require('mongodb').MongoClient;
 
-var uriEs = util.format("mongodb://%s/eaglesight", config.mongo.local.host);
+var uriEs = util.format("mongodb://%s/dev", config.mongo.local.host);
 var uriMbi = util.format("mongodb://%s:%s/mbi", config.mongo.remote.host, config.mongo.remote.port);
 
 var ObjectId = require('mongodb').ObjectID;
@@ -204,7 +204,7 @@ function startServer(callback) {
                         token.type = "token";
                         //Receive data from the token Id
                         connectDbEs.then(function(db) {
-                            db.collection('auth').findOne({
+                            db.collection('eaglesight').findOne({
                                 "_id": ObjectId(data.id)
                             }, function(err, record) {
                                 if (err) {
