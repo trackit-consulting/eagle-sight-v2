@@ -1,5 +1,3 @@
-//http://localhost:1841/?token=eyJsbmciOiAtOC42NTY4NzI2LCJsYXQiOiA0MS4xNjI4NjM0LCJ2aWQiOiAxMzE2NTMsImVwb2NoIjogMTUxMzA3NzUzNDAwMCwgInR5cGUiOiAxfQ==
-//{"lng": -8.6568726,"lat": 41.1628634,"vid": 131653,"epoch": 1494501273000, "type": "auth", "lp": "XX-XX-XX", "userlang": "en"}
 Ext.define('ES.view.Layout.Map.MapController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.map',
@@ -80,9 +78,9 @@ Ext.define('ES.view.Layout.Map.MapController', {
                                                     } else if (JSON.parse(e.data).type === "token") {
                                                         //Countdown to show how long does it take for the link to expire
                                                         ES.util.Helper.Counter.startNewCountdown(Ext.getStore('timeline'), Ext.getStore('routedata'), JSON.parse(e.data).epoch);
+                                                        ES.util.Helper.Token.retreiveTokenProperties(JSON.parse(e.data));
                                                         setTimeout(function() {
                                                             if (!ES.util.Helper.GlobalVars.isOffline) {
-                                                                ES.util.Helper.Token.retreiveTokenProperties(JSON.parse(e.data));
                                                                 ES.util.Helper.Initialize.addDestinationMarker(localStorage.getItem('dstLat'), localStorage.getItem('dstLng'), gmappanel.gmap);
                                                                 ES.util.Helper.Initialize.authClient(JSON.parse(e.data).vid, client);
                                                                 //Recover all the saved data in sessions and shows to the user when the page refreshes
