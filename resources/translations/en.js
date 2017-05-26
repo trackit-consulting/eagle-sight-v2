@@ -1,4 +1,5 @@
 //translations in en
+
 locale = {
 		time: "Time",
 		address: "Address",

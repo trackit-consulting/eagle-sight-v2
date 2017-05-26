@@ -29,7 +29,12 @@ Ext.define('ES.util.Helper.Token', {
             localStorage.setItem("dstLat", setLat);
             localStorage.setItem("mid", setVhc);
             localStorage.setItem("vhcLp", setLp);
-            localStorage.setItem("user-lang", setLang);
+           
+            if(localStorage.getItem('change-lang') === null){
+                localStorage.setItem("user-lang", setLang);
+            }
+
+            //location.reload();
         },
 
         decryptToken: function () {
