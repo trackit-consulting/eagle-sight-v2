@@ -14,6 +14,7 @@ Ext.define('ES.util.Helper.GlobalVars', {
         countTime: 0, //Count how many seconds the car have been parked
         flightPathCoordinates: [], //All route coordinates
         markers: [],
-        currentDirection: "" //Vehicles direction
+        currentDirection: "", //Vehicles direction
+        changedLang: false // Check if user changed the page language
     }
 });

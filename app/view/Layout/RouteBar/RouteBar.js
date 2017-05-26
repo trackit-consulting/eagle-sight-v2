@@ -34,7 +34,7 @@ Ext.define('ES.view.Layout.RouteBar.RouteBar', {
                 return value;
             },
             listeners: {
-                click: 'cellclick'
+                //click: 'cellclick'
             }
         },
         /*
@@ -76,7 +76,7 @@ Ext.define('ES.view.Layout.RouteBar.RouteBar', {
                 return value;
             },
             listeners: {
-                click: 'cellclick'
+                //click: 'cellclick'
             }
         },
         {
@@ -105,7 +105,7 @@ Ext.define('ES.view.Layout.RouteBar.RouteBar', {
                 return value;
             },
             listeners: {
-                click: 'cellclick'
+                //click: 'cellclick'
             }
         }
         /*,

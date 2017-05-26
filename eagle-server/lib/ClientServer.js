@@ -4,6 +4,7 @@ var config = require('./config/settings'),
     WebSocketServer = require('websocket').server,
     serverLogger = require('./utilities/logger/server'),
     clientLogger = require('./utilities/logger/client'),
+    authData = require('./utilities/data').Data,
     http = require('http'),
     _ = require('underscore');
 
@@ -11,13 +12,6 @@ var util = require('util');
 var client;
 var toRetryConnect = false;
 var eagles = [];
-
-var MongoClient = require('mongodb').MongoClient;
-
-var uriEs = util.format("mongodb://%s/dev", config.mongo.local.host);
-var uriMbi = util.format("mongodb://%s:%s/mbi", config.mongo.remote.host, config.mongo.remote.port);
-
-var ObjectId = require('mongodb').ObjectID;
 
 var ClientServer = function() {};
 
@@ -158,73 +152,19 @@ function startServer(callback) {
                         connection.send(JSON.stringify(pong));
                         break;
                     case "auth":
-                    var connectDbMbi = MongoClient.connect(uriMbi);
                         serverLogger.info('Received Message: %j', data);
                         // Setting vid for connection
                         connection.vid = data.vid;
                         eagles.push(connection);
                         serverLogger.info('Total Clients: %j', eagles.length);
                         //Receive data from the vehicle last added value
-                        connectDbMbi.then(function(db) {
-                            db.collection('mobile_info').findOne({
-                                mid: data.vid
-                            }, function(err, record) {
-                                if (err) {
-                                    console.log(err);
-                                } else {
-                                    if (record === null) {
-                                        console.log(err);
-                                    } else {
-                                        var receiveLastData = JSON.stringify(record);
-                                        var lastDataObj = JSON.parse(receiveLastData);
-                                        var lastData = {
-                                            "params": {
-                                                "lastRecord": {
-                                                    "vid": data.vid,
-                                                    "loc": {
-                                                        "lon": lastDataObj.pos.loc.lon,
-                                                        "lat": lastDataObj.pos.loc.lat
-                                                    },
-                                                    "gsp": lastDataObj.pos.gsp,
-                                                    "hdg": lastDataObj.pos.hdg
-                                                }
-                                            }
-                                        };
-                                        connection.send(JSON.stringify(lastData));
-                                    }
-                                }
-
-                            });
-                            db.close();
+                        authData.getLastRecord(connection.vid, function(lastData){
+                            connection.send(JSON.stringify(lastData));
                         });
                         break;
                     case "token":
-                    var connectDbEs = MongoClient.connect(uriEs);
-                        var token = {};
-                        token.type = "token";
-                        //Receive data from the token Id
-                        connectDbEs.then(function(db) {
-                            db.collection('eaglesight').findOne({
-                                "_id": ObjectId(data.id)
-                            }, function(err, record) {
-                                if (err) {
-                                    console.log(err);
-                                } else {
-                                    if (record === null) {
-                                        var notFound = {};
-                                        notFound.type = "error";
-                                        connection.send(JSON.stringify(notFound));
-                                    } else {
-                                        try {
-                                            record.type = "token";
-                                            connection.send(JSON.stringify(record));
-                                            setHit(db, data.id, connection.remoteAddress);
-                                        } catch (e) {
-                                            console.log(e);
-                                        }
-                                    }
-                                }
-                            });
+                        authData.getTokenValues(data.id, connection.remoteAddress, function(tokenData){
+                            connection.send(tokenData);
                         });
                         break;
                     default:
@@ -236,24 +176,6 @@ function startServer(callback) {
             serverLogger.info('Connection Closed Peer %s', connection.remoteAddress);
             takeClientOff(connection);
         });
-    });
-}
-
-function setHit(db, id, remoteAddress) {
-
-    db.collection('auth').update({
-        _id: ObjectId(id)
-    }, {
-        $set: {
-            hit: [{
-                date: new Date(Date.now()).toISOString(),
-                ip: remoteAddress
-            }]
-        },
-
-
-    }, {
-        multi: true
     });
 }
 
