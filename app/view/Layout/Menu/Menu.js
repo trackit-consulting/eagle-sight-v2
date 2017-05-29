@@ -29,7 +29,7 @@ Ext.define('ES.view.Layout.Menu.Menu', {
             align: 'center',
             height: 50,
             style: {
-                "background": "-webkit-linear-gradient(#f9e9cf, #e5c99c);",
+                "background":ES.util.Helper.Colors.cellsBg,
                 "color": ES.util.Helper.Colors.rowsTxtColor
             },
             renderer: function (value, metaData) {
@@ -45,12 +45,12 @@ Ext.define('ES.view.Layout.Menu.Menu', {
             align: 'center',
             height: 50,
             style: {
-                "background": "-webkit-linear-gradient(#f9e9cf, #e5c99c);",
+                "background":ES.util.Helper.Colors.cellsBg,
                 "color": ES.util.Helper.Colors.rowsTxtColor,
-                "outline": "1px solid #d3a863"
+                "outline": ES.util.Helper.Colors.borderclr
             },
             renderer: function (value, metaData) {
-                metaData.style = "background-color:#d3d3d3; color: #000000; padding:20px";
+                metaData.style = "background:#d3d3d3; color : #000000; padding:20px";
                 return value;
             },
             listeners: {
@@ -64,9 +64,9 @@ Ext.define('ES.view.Layout.Menu.Menu', {
             align: 'center',
             height: 50,
             style: {
-                "background": "-webkit-linear-gradient(#f9e9cf, #e5c99c);",
+                "background": ES.util.Helper.Colors.cellsBg,
                 "color": ES.util.Helper.Colors.rowsTxtColor,
-                "outline": "1px solid #d3a863"
+                "outline": ES.util.Helper.Colors.borderclr
             },
             renderer: function (value, metaData, record) {
                 metaData.style = "color: " + ES.util.Helper.Colors.rowsTxtColor + "; padding: 20px;";
