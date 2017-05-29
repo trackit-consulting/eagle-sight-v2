@@ -33,6 +33,7 @@ Ext.define('ES.view.Layout.Toolbar.ToolbarController', {
                 lang = 'en';
         }
         localStorage.setItem("user-lang", lang);
+        localStorage.setItem("change-lang", true);
         location.reload();
     },
 

@@ -26,7 +26,7 @@ Ext.define('ES.view.Layout.Map.MapController', {
             component: {
                 'map': {
                     mapready: function(gmappanel) {
-
+             
                         gmappanel.gmap.setZoom(6);
                         var isInitialized = false;
 
@@ -37,6 +37,7 @@ Ext.define('ES.view.Layout.Map.MapController', {
                             if (!ES.util.Helper.Validations.validateToken()) {
                                 //Validate and retreive token
                                 setTimeout(function() {
+                                    
                                     if (!ES.util.Helper.GlobalVars.isOffline) {
                                         //Creates a new Websocket
                                         client = new WebSocket(ES.util.Helper.GlobalVars.ws, ES.util.Helper.GlobalVars.protocol);
