@@ -127,7 +127,7 @@ Ext.define('ES.view.Layout.Toolbar.Toolbar', {
         alt: 'connection',
         id: 'con',
         width: 15,
-        height: 12,
+        height: 15,
         style: {
             "margin-right": "20px"
         },

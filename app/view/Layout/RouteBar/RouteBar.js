@@ -25,9 +25,9 @@ Ext.define('ES.view.Layout.RouteBar.RouteBar', {
             height: 45,
             align: 'center',
             style: {
-                "background": "-webkit-linear-gradient(#f9e9cf, #e5c99c);",
+                "background":ES.util.Helper.Colors.cellsBg,
                 "color": ES.util.Helper.Colors.rowsTxtColor,
-                "border-right": "1px solid #d3a863",
+                "border-right": ES.util.Helper.Colors.borderclr,
             },
             renderer: function (value, metaData) {
                 metaData.style = "background:" + ES.util.Helper.Colors.routeBarRows + "; border-right: 1px solid #c7c7c7; border-top: 1px solid #7c7c7c;";
@@ -65,9 +65,9 @@ Ext.define('ES.view.Layout.RouteBar.RouteBar', {
             height: 45,
             align: 'center',
             style: {
-                "background": "-webkit-linear-gradient(#f9e9cf, #e5c99c);",
+                "background": ES.util.Helper.Colors.cellsBg,
                 "color": ES.util.Helper.Colors.rowsTxtColor,
-                "border-right": "1px solid #d3a863"
+                "border-right": ES.util.Helper.Colors.borderclr
             },
             renderer: function (value, metaData) {
                 var color = "#1b6053";
@@ -85,14 +85,14 @@ Ext.define('ES.view.Layout.RouteBar.RouteBar', {
             height: 45,
             align: 'center',
             style: {
-                "background": "-webkit-linear-gradient(#f9e9cf, #e5c99c);",
+                "background": ES.util.Helper.Colors.cellsBg,
                 "color": ES.util.Helper.Colors.rowsTxtColor,
-                "border-right": "1px solid #d3a863"
+                "border-right": ES.util.Helper.Colors.borderclr
             },
             renderer: function (value, metaData) {
                 var color;
                 if (value === locale.parked) {
-                    color = "#e5b7c2";
+                    color = ES.util.Helper.Colors.parkedclr;
                     ES.util.Helper.GlobalVars.countTime++;
                     var minutes = "0" + Math.floor(ES.util.Helper.GlobalVars.countTime / 60);
                     var seconds = "0" + (ES.util.Helper.GlobalVars.countTime - minutes * 60);
