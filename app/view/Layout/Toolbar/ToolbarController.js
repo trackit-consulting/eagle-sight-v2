@@ -4,7 +4,7 @@ Ext.define('ES.view.Layout.Toolbar.ToolbarController', {
 
     over: function(image, e, options) {
         Ext.getCmp(e.id).setStyle('cursor', 'pointer');
-        Ext.getCmp(e.id).setStyle('opacity', '0.9');
+        Ext.getCmp(e.id).setStyle('opacity', '1');
 
     },
 
