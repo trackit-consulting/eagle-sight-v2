@@ -71,6 +71,7 @@ Ext.define('ES.view.Layout.Map.MapController', {
                                             ES.util.Helper.GlobalVars.countTime = 0;
                                         };
                                         client.onmessage = function(e) {
+                                            
                                             if (!ES.util.Helper.GlobalVars.isOffline) {
                                                 //Clean the timeline if necessary
                                                 if (e && e.data) {
@@ -97,13 +98,13 @@ Ext.define('ES.view.Layout.Map.MapController', {
                                                     } else {
                                                         ES.util.Helper.Timeline.cleanTimeline(Ext.getStore('timeline'));
                                                         //Save the received data
-                                                        ES.util.Helper.Savedata.saveReceivedData(parseFloat(JSON.parse(e.data).params.lastRecord.loc.lat), parseFloat(JSON.parse(e.data).params.lastRecord.loc.lon), parseFloat(localStorage.getItem('dstLat')), parseFloat(localStorage.getItem('dstLng')), parseFloat(JSON.parse(e.data).params.lastRecord.gsp));
+                                                        ES.util.Helper.Savedata.saveReceivedData(parseFloat(JSON.parse(e.data).lat), parseFloat(JSON.parse(e.data).lon), parseFloat(localStorage.getItem('dstLat')), parseFloat(localStorage.getItem('dstLng')), parseFloat(JSON.parse(e.data).gsp));
                                                         //Save the coordinates to draw on the map
-                                                        ES.util.Helper.Savedata.saveCoordinates(parseFloat(JSON.parse(e.data).params.lastRecord.loc.lat), parseFloat(JSON.parse(e.data).params.lastRecord.loc.lon));
+                                                        ES.util.Helper.Savedata.saveCoordinates(parseFloat(JSON.parse(e.data).lat), parseFloat(JSON.parse(e.data).lon));
                                                         //Update the route bar with the last received data
                                                         ES.util.Helper.Routebar.requestRoutebarData(new google.maps.DirectionsService(), Ext.getStore('routedata'));
                                                         //Add a new row to the timeline
-                                                        ES.util.Helper.Timeline.addTimelineRow(parseFloat(JSON.parse(e.data).params.lastRecord.vid), parseFloat(JSON.parse(e.data).params.lastRecord.hdg), Ext.getStore('timeline'));
+                                                        ES.util.Helper.Timeline.addTimelineRow(parseFloat(JSON.parse(e.data).vid), parseFloat(JSON.parse(e.data).hdg), Ext.getStore('timeline'));
                                                         //Check if the vehicle is parked or not
                                                         ES.util.Helper.Polyline.checkIfParked();
                                                         //Starts polyline drawing

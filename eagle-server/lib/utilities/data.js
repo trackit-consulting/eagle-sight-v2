@@ -24,8 +24,6 @@ Data.prototype.getLastRecord = function (vid, callback) {
                     var receiveLastData = JSON.stringify(record);
                     var lastDataObj = JSON.parse(receiveLastData);
                     var lastData = {
-                        "params": {
-                            "lastRecord": {
                                 "vid": vid,
                                 "loc": {
                                     "lon": lastDataObj.pos.loc.lon,
@@ -33,8 +31,6 @@ Data.prototype.getLastRecord = function (vid, callback) {
                                 },
                                 "gsp": lastDataObj.pos.gsp,
                                 "hdg": lastDataObj.pos.hdg
-                            }
-                        }
                     };
 
                     callback(lastData);
