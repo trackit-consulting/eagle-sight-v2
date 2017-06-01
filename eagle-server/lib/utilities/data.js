@@ -36,11 +36,7 @@ Data.prototype.getLastRecord = function (vid, callback) {
                                 "gsp": lastDataObj.pos.gsp,
                                 "hdg": lastDataObj.pos.hdg
                     };
-                    
                     */
-
-                    console.log(record);
-
 
                     callback(JSON.stringify(record));
                 }
