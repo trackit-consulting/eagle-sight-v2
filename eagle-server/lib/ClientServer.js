@@ -62,17 +62,18 @@ function startClient(callback) {
         });
 
         connection.on('message', function(message) {
-            if (message.type === 'utf8') {
-                var data = JSON.parse(message.utf8Data);
-                if (data.params.type == "records") {
-                    if (data.params.lastRecord !== undefined) {
-                        var record = data.params.lastRecord;
-                        clientLogger.info("%j", record);
-                        send(record.vid, message);
-                    }
-                }
-            }
-        });
+           if (message.type === 'utf8') {
+               var data = JSON.parse(message.utf8Data);
+               if (data.params.type == "records") {
+                   if (data.params.lastRecord !== undefined) {
+                       var record = data.params.lastRecord;
+                       var clean = _.omit(record, ['exd']);	
+                       clientLogger.info("%j", clean);
+                       send(record.vid, clean);
+                   }
+               }
+           }
+       });
         callback();
     });
 
@@ -191,13 +192,13 @@ function send(vid, message) {
 }
 
 function sendToClient(message, sender) {
-    eagles.forEach(function(eagle) {
-        // Don't want to send it to sender
-        if (eagle.vid === sender.vid) {
-            eagle.sendUTF(message.utf8Data);
-            serverLogger.info("%s | %s - %s", helper.midPadLeft(eagle.vid), sender.remoteAddress, JSON.stringfy(message));
-        }
-    });
+   eagles.forEach(function(eagle) {
+       // Don't want to send it to sender
+       if (eagle.vid === sender.vid) {
+           eagle.sendUTF(JSON.stringify(message));
+           serverLogger.info("%s | %s - %s", helper.midPadLeft(eagle.vid), sender.remoteAddress, JSON.stringify(message));
+       }
+   });
 }
 
 function takeClientOff(eagle) {
