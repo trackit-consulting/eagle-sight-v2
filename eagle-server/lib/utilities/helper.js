@@ -9,4 +9,13 @@ Helper.prototype.generateUUID = function () {
     });
     return uuid;
 };
+
+Helper.prototype.midPadLeft = function (mid) {
+    mid = mid.toString();
+    while (mid.length < 6) {
+        mid = ' ' + mid;
+    }
+    return mid;
+};
+
 exports.Helper = new Helper();

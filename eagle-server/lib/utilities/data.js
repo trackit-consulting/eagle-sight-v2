@@ -2,7 +2,7 @@ var MongoClient = require('mongodb').MongoClient;
 var config = require('../config/settings');
 var util = require('util');
 
-var uriEs = util.format("mongodb://%s/dev", config.mongo.local.host);
+var uriEs = util.format("mongodb://%s:%s/dev", config.mongo.remote.host, config.mongo.remote.port);
 var uriMbi = util.format("mongodb://%s:%s/mbi", config.mongo.remote.host, config.mongo.remote.port);
 
 var ObjectId = require('mongodb').ObjectID;

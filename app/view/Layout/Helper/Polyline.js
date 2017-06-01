@@ -81,7 +81,8 @@ Ext.define('ES.util.Helper.Polyline', {
 
             google.maps.event.addDomListener(marker, 'click', function() {
 
-                ES.util.Helper.Timeline.showAddress(marker.getPosition().lat(), marker.getPosition().lng(), Ext.ComponentQuery.query('map')[0]);
+                ES.util.Helper.Timeline.showAddress(marker.getPosition().lat(), marker.getPosition().lng(), Ext.ComponentQuery.query('map')[0], false, null);
+                
             });
 
             ES.util.Helper.Polyline.addListeners(flightPath, marker, licensePlate, map);

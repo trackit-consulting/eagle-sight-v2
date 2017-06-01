@@ -56,11 +56,9 @@ Ext.define('ES.util.Helper.Initialize', {
                     map: gmappanel,
                     optimized: false
                 });
-                var infoWindow = new google.maps.InfoWindow({
-                    content: "Destination Point",
-                    disableAutoPan: true
-                });
-                infoWindow.open(gmappanel, marker);
+
+                ES.util.Helper.Timeline.showAddress(marker.getPosition().lat(), marker.getPosition().lng(), Ext.ComponentQuery.query('map')[0], true, marker);
+                
         },
 
         /**
