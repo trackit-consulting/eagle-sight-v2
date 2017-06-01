@@ -159,15 +159,16 @@ function startServer(callback) {
                         eagles.push(connection);
                         serverLogger.info('Total Clients: %j', eagles.length);
                         //Receive data from the vehicle last added value
-                        
                         authData.getLastRecord(connection.vid, function(lastData){
-                            //connection.send(JSON.stringify(lastData));
-                            //console.log(lastData);
+							serverLogger.info(lastData);
+                            //serverLogger.info("%s %s %s", connection.vid), connection.remoteAddress, lastData);							
+							connection.send(lastData);
                         });
-                        
                         break;
                     case "token":
                         authData.getTokenValues(data.id, connection.remoteAddress, function(tokenData){
+							serverLogger.info(tokenData);
+							//serverLogger.info("%s %s %s", connection.vid, connection.remoteAddress, tokenData);
                             connection.send(tokenData);
                         });
                         break;
@@ -199,7 +200,7 @@ function sendToClient(message, sender) {
        // Don't want to send it to sender
        if (eagle.vid === sender.vid) {
            eagle.sendUTF(JSON.stringify(message));
-           serverLogger.info("%s | %s - %s", helper.midPadLeft(eagle.vid), sender.remoteAddress, JSON.stringify(message));
+		   serverLogger.info("%s %s %s %s \t%s \t%s", helper.midPadLeft(eagle.vid), sender.remoteAddress, helper.midPadLeft(message.gsp), helper.midPadLeft(message.hdg), message.tmx, JSON.stringify(message.loc));
        }
    });
 }

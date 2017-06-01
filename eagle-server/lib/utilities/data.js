@@ -10,35 +10,17 @@ var ObjectId = require('mongodb').ObjectID;
 var Data = function () { };
 
 Data.prototype.getLastRecord = function (vid, callback) {
-          console.log("teste");
+          console.log("vid: " + vid);
     var connectDbMbi = MongoClient.connect(uriMbi);
     connectDbMbi.then(function (db) {
-        db.collection('mobile_info').findOne({
-            mid: vid
-        }, function (err, record) {
+        db.collection('mobile_info').findOne({mid: vid}, function (err, record) {
             if (err) {
-                console.log(err);
-          
+                console.log("error: " + err);          
             } else {
                 if (record === null) {
-                    console.log(err);
+                console.log("mobile not found: " + vid);          
                 } else {
-                    var receiveLastData = JSON.stringify(record);
-
-                    /*
-                    var lastDataObj = JSON.parse(receiveLastData);
-                    var lastData = {
-                                "vid": vid,
-                                "loc": {
-                                    "lon": lastDataObj.lon,
-                                    "lat": lastDataObj.lat
-                                },
-                                "gsp": lastDataObj.pos.gsp,
-                                "hdg": lastDataObj.pos.hdg
-                    };
-                    */
-
-                    callback(JSON.stringify(record));
+                    callback(JSON.stringify(record.pos));
                 }
             }
 
