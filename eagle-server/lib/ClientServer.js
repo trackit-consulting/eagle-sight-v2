@@ -195,6 +195,7 @@ function sendToClient(message, sender) {
         // Don't want to send it to sender
         if (eagle.vid === sender.vid) {
             eagle.sendUTF(message.utf8Data);
+            serverLogger.info("%s | %s - %s", helper.midPadLeft(eagle.vid), sender.remoteAddress, JSON.stringfy(message));
         }
     });
 }

@@ -11,6 +11,6 @@ Ext.define('ES.view.Layout.Menu.MenuController', {
             grid.up().collapse();
         }
         var rowdata = gridstore.data.items[rowIndex];
-        ES.util.Helper.Timeline.showAddress(rowdata.data['lat'], rowdata.data['lng'], Ext.ComponentQuery.query('map')[0]);
+        ES.util.Helper.Timeline.showAddress(rowdata.data['lat'], rowdata.data['lng'], Ext.ComponentQuery.query('map')[0], false, null);
     }
 });
