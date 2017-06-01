@@ -70,7 +70,7 @@ Ext.define('ES.view.Layout.Map.MapController', {
                                             ES.util.Helper.GlobalVars.countPing = 0;
                                             ES.util.Helper.GlobalVars.countTime = 0;
                                         };
-                                        client.onmessage = function(e) {
+                                        client.onmessage = function(e) {  
                                             if (!ES.util.Helper.GlobalVars.isOffline) {
                                                 //Clean the timeline if necessary
                                                 if (e && e.data) {
@@ -97,9 +97,9 @@ Ext.define('ES.view.Layout.Map.MapController', {
                                                     } else {
                                                         ES.util.Helper.Timeline.cleanTimeline(Ext.getStore('timeline'));
                                                         //Save the received data
-                                                        ES.util.Helper.Savedata.saveReceivedData(parseFloat(JSON.parse(e.data).lat), parseFloat(JSON.parse(e.data).lon), parseFloat(localStorage.getItem('dstLat')), parseFloat(localStorage.getItem('dstLng')), parseFloat(JSON.parse(e.data).gsp));
+                                                        ES.util.Helper.Savedata.saveReceivedData(parseFloat(JSON.parse(e.data).loc.lat), parseFloat(JSON.parse(e.data).loc.lon), parseFloat(localStorage.getItem('dstLat')), parseFloat(localStorage.getItem('dstLng')), parseFloat(JSON.parse(e.data).gsp));
                                                         //Save the coordinates to draw on the map
-                                                        ES.util.Helper.Savedata.saveCoordinates(parseFloat(JSON.parse(e.data).lat), parseFloat(JSON.parse(e.data).lon));
+                                                        ES.util.Helper.Savedata.saveCoordinates(parseFloat(JSON.parse(e.data).loc.lat), parseFloat(JSON.parse(e.data).loc.lon));
                                                         //Update the route bar with the last received data
                                                         ES.util.Helper.Routebar.requestRoutebarData(new google.maps.DirectionsService(), Ext.getStore('routedata'));
                                                         //Add a new row to the timeline
@@ -108,6 +108,7 @@ Ext.define('ES.view.Layout.Map.MapController', {
                                                         ES.util.Helper.Polyline.checkIfParked();
                                                         //Starts polyline drawing
                                                         ES.util.Helper.Polyline.initPolylineDraw(gmappanel.gmap, ES.util.Helper.Polyline.isParked());
+                                                        console.log(JSON.parse(e.data));
                                                         //Follow the last received address, changing the map focus/motion
                                                         ES.util.Helper.Polyline.focusOnAddress(gmappanel.gmap);
                                                     }
@@ -116,6 +117,7 @@ Ext.define('ES.view.Layout.Map.MapController', {
                                                 client.close();
                                             }
                                         };
+                                        
                                     }
                                 }, 1000);
                             }
