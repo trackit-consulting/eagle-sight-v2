@@ -159,9 +159,12 @@ function startServer(callback) {
                         eagles.push(connection);
                         serverLogger.info('Total Clients: %j', eagles.length);
                         //Receive data from the vehicle last added value
+                        
                         authData.getLastRecord(connection.vid, function(lastData){
-                            connection.send(JSON.stringify(lastData));
+                            //connection.send(JSON.stringify(lastData));
+                            //console.log(lastData);
                         });
+                        
                         break;
                     case "token":
                         authData.getTokenValues(data.id, connection.remoteAddress, function(tokenData){

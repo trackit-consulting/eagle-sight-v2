@@ -71,7 +71,6 @@ Ext.define('ES.view.Layout.Map.MapController', {
                                             ES.util.Helper.GlobalVars.countTime = 0;
                                         };
                                         client.onmessage = function(e) {
-                                            
                                             if (!ES.util.Helper.GlobalVars.isOffline) {
                                                 //Clean the timeline if necessary
                                                 if (e && e.data) {

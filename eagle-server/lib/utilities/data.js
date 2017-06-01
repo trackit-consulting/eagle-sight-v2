@@ -10,6 +10,7 @@ var ObjectId = require('mongodb').ObjectID;
 var Data = function () { };
 
 Data.prototype.getLastRecord = function (vid, callback) {
+          console.log("teste");
     var connectDbMbi = MongoClient.connect(uriMbi);
     connectDbMbi.then(function (db) {
         db.collection('mobile_info').findOne({
@@ -17,23 +18,31 @@ Data.prototype.getLastRecord = function (vid, callback) {
         }, function (err, record) {
             if (err) {
                 console.log(err);
+          
             } else {
                 if (record === null) {
                     console.log(err);
                 } else {
                     var receiveLastData = JSON.stringify(record);
+
+                    /*
                     var lastDataObj = JSON.parse(receiveLastData);
                     var lastData = {
                                 "vid": vid,
                                 "loc": {
-                                    "lon": lastDataObj.pos.loc.lon,
-                                    "lat": lastDataObj.pos.loc.lat
+                                    "lon": lastDataObj.lon,
+                                    "lat": lastDataObj.lat
                                 },
                                 "gsp": lastDataObj.pos.gsp,
                                 "hdg": lastDataObj.pos.hdg
                     };
+                    
+                    */
 
-                    callback(lastData);
+                    console.log(record);
+
+
+                    callback(JSON.stringify(record));
                 }
             }
 

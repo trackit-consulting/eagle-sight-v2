@@ -22,8 +22,8 @@ var config = {
   },
   mongo: {
     remote: {
-      host: '10.0.0.160',
-      port: 45555
+      host: '127.0.0.1',
+      port: 27017
     },
     local: {
       host: 'localhost'
